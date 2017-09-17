@@ -12,5 +12,4 @@ public interface ForeignBusService {
 	 */
 	BackResult<CvsFilePathDomain> runTheTest(String fileUrl,String userId);
 	
-	
 }
