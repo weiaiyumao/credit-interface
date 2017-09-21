@@ -1,12 +1,10 @@
-package main.java.cn.domain;
-
-import main.java.cn.common.ResultCode;
+package main.java.cn.common;
 
 public class BackResult<T> {
 	
 	private String resultMsg;
 	private String resultCode;
-	private Object resultObj;
+	private T resultObj;
 	public String getResultMsg() {
 		return resultMsg;
 	}
@@ -19,15 +17,16 @@ public class BackResult<T> {
 	public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
-	public Object getResultObj() {
+	
+	public T getResultObj() {
 		return resultObj;
 	}
-	public void setResultObj(Object resultObj) {
+	public void setResultObj(T resultObj) {
 		this.resultObj = resultObj;
 	}
-	
 	public BackResult(){
 		this.resultCode = ResultCode.RESULT_SUCCEED;
+		this.resultMsg = "成功";
 	}
 	
 }
