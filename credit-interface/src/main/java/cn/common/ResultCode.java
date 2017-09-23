@@ -26,4 +26,9 @@ public class ResultCode {
 	 * 数据完整性异常
 	 */
 	public static final String RESULT_DATA_EXCEPTIONS = "999995";
+	
+	/**
+	 * session 登录过期
+	 */
+	public static final String RESULT_SESSION_STALED = "999994";
 }

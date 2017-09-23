@@ -18,4 +18,11 @@ public interface UserBusService {
 	 * @return
 	 */
 	BackResult<CreUserDomain> findOrsaveUser(CreUserDomain creUserDomain);
+	
+	/**
+	 * 修改用户信息
+	 * @param creUserDomain
+	 * @return
+	 */
+	BackResult<CreUserDomain> updateCreUser(CreUserDomain creUserDomain);
 }

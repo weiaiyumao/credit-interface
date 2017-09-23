@@ -1,7 +1,7 @@
 package main.java.cn.service;
 
 import main.java.cn.common.BackResult;
-import main.java.cn.domain.CvsFilePathDomain;
+import main.java.cn.domain.RunTestDomian;
 
 public interface ForeignBusService {
 	/**
@@ -10,6 +10,6 @@ public interface ForeignBusService {
 	 * @param userId
 	 * @return 返回文件下载地址对象
 	 */
-	BackResult<CvsFilePathDomain> runTheTest(String fileUrl,String userId);
+	BackResult<RunTestDomian> runTheTest(String fileUrl,String userId);
 	
 }
