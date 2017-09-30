@@ -83,12 +83,71 @@ public class ChuangLanSmsUtil {
 		return null;
 	}
 
+	/**
+	 * 注册验证码发送短信
+	 * @param mobile
+	 * @param code
+	 * @return
+	 */
 	public Boolean sendSmsByMobile(String mobile,String code) {
 		
 		// 请求地址请登录253云通讯自助通平台查看或者询问您的商务负责人获取
 		String smsSingleRequestServerUrl = "http://smssh1.253.com/msg/send/json";
 		// 短信内容
 		String msg = "【创蓝数据应用中心】您的验证码是：" + code;
+		// 手机号码
+		String phone = mobile;
+		// 状态报告
+		String report = "true";
+
+		SmsSendRequest smsSingleRequest = new SmsSendRequest(ACCOUNT, PSWD, msg, phone, report);
+
+		String requestJson = JSON.toJSONString(smsSingleRequest);
+
+		String response = sendSmsByPost(smsSingleRequestServerUrl, requestJson);
+
+		SmsSendResponse smsSingleResponse = JSON.parseObject(response, SmsSendResponse.class);
+		
+		return smsSingleResponse.getCode().equals("0") ? true : false;
+	}
+	
+	/**
+	 * 充值成功发送短信
+	 * @param mobile
+	 * @param number
+	 * @return
+	 */
+	public Boolean sendSmsByMobileForRecharge(String mobile,Integer number) {
+		
+		// 请求地址请登录253云通讯自助通平台查看或者询问您的商务负责人获取
+		String smsSingleRequestServerUrl = "http://smssh1.253.com/msg/send/json";
+		// 短信内容
+		String msg = "尊敬的客户您好：您本次成功冲值" + number + "条己到账，请登陆shdb.253.com查看";
+		// 手机号码
+		String phone = mobile;
+		// 状态报告
+		String report = "true";
+
+		SmsSendRequest smsSingleRequest = new SmsSendRequest(ACCOUNT, PSWD, msg, phone, report);
+
+		String requestJson = JSON.toJSONString(smsSingleRequest);
+
+		String response = sendSmsByPost(smsSingleRequestServerUrl, requestJson);
+
+		SmsSendResponse smsSingleResponse = JSON.parseObject(response, SmsSendResponse.class);
+		
+		return smsSingleResponse.getCode().equals("0") ? true : false;
+	}
+	
+	/**
+	 * 检测成功发送短信
+	 */
+	public Boolean sendSmsByMobileForTest(String mobile) {
+		
+		// 请求地址请登录253云通讯自助通平台查看或者询问您的商务负责人获取
+		String smsSingleRequestServerUrl = "http://smssh1.253.com/msg/send/json";
+		// 短信内容
+		String msg = "尊敬的客户您好：您的实号检测报告己完成，请登陆shdb.253.com查收";
 		// 手机号码
 		String phone = mobile;
 		// 状态报告

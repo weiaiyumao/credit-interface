@@ -13,13 +13,17 @@ public class TrdOrderDomain implements Serializable{
 
 	private static final long serialVersionUID = -8904924027193308451L;
 
-	private Integer id;
+private Integer id;
 	
 	private Integer creUserId; // 关联用户ID
 	
 	private String orderNo; // 订单编号
 	
+	private String tradeNo; // 第三方支付订单号
+	
 	private String clOrderNo; // 创蓝充值订单业务号
+	
+	private Integer productsId; // 产品ID
 	
 	private Integer number; // 条数
 	
@@ -40,7 +44,7 @@ public class TrdOrderDomain implements Serializable{
 	private Date createTime; // 创建时间
 	
 	private Date updateTime; // 修改时间
-
+	
 	public Integer getId() {
 		return id;
 	}
@@ -152,5 +156,23 @@ public class TrdOrderDomain implements Serializable{
 	public void setType(String type) {
 		this.type = type;
 	}
+
+	public String getTradeNo() {
+		return tradeNo;
+	}
+
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
+	}
+
+	public Integer getProductsId() {
+		return productsId;
+	}
+
+	public void setProductsId(Integer productsId) {
+		this.productsId = productsId;
+	}
+	
+	
 	
 }
