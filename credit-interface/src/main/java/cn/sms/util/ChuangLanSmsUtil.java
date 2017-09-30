@@ -164,6 +164,31 @@ public class ChuangLanSmsUtil {
 		return smsSingleResponse.getCode().equals("0") ? true : false;
 	}
 	
+	/**
+	 * 二次检测剩余条数不足
+	 */
+	public Boolean sendSmsByMobileForTwoTest(String mobile,Integer number) {
+		
+		// 请求地址请登录253云通讯自助通平台查看或者询问您的商务负责人获取
+		String smsSingleRequestServerUrl = "http://smssh1.253.com/msg/send/json";
+		// 短信内容
+		String msg = "尊敬的客户您好：您的账户二次清洗服务剩佘条数己低于"+number+"条，请注意冲值";
+		// 手机号码
+		String phone = mobile;
+		// 状态报告
+		String report = "true";
+
+		SmsSendRequest smsSingleRequest = new SmsSendRequest(ACCOUNT, PSWD, msg, phone, report);
+
+		String requestJson = JSON.toJSONString(smsSingleRequest);
+
+		String response = sendSmsByPost(smsSingleRequestServerUrl, requestJson);
+
+		SmsSendResponse smsSingleResponse = JSON.parseObject(response, SmsSendResponse.class);
+		
+		return smsSingleResponse.getCode().equals("0") ? true : false;
+	}
+	
 	public static void main(String[] args) {
 		ChuangLanSmsUtil.getInstance().sendSmsByMobile("13817367247", "123456");
 	}
