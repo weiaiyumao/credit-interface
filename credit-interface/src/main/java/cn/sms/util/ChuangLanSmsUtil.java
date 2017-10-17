@@ -189,6 +189,31 @@ public class ChuangLanSmsUtil {
 		return smsSingleResponse.getCode().equals("0") ? true : false;
 	}
 	
+	/**
+	 * 检测成功发送短信
+	 */
+	public Boolean sendSmsByMobileForTestEx(String mobile) {
+		
+		// 请求地址请登录253云通讯自助通平台查看或者询问您的商务负责人获取
+		String smsSingleRequestServerUrl = "http://smssh1.253.com/msg/send/json";
+		// 短信内容
+		String msg = "尊敬的用户您好，非常抱歉的通知您，由于系统原因，您本次实号检测业务未能正常进行，请登陆shdb.253.com 重新检测，本次检测不扣费，如有疑问请咨询页面客服";
+		// 手机号码
+		String phone = mobile;
+		// 状态报告
+		String report = "true";
+
+		SmsSendRequest smsSingleRequest = new SmsSendRequest(ACCOUNT, PSWD, msg, phone, report);
+
+		String requestJson = JSON.toJSONString(smsSingleRequest);
+
+		String response = sendSmsByPost(smsSingleRequestServerUrl, requestJson);
+
+		SmsSendResponse smsSingleResponse = JSON.parseObject(response, SmsSendResponse.class);
+		
+		return smsSingleResponse.getCode().equals("0") ? true : false;
+	}
+	
 	public static void main(String[] args) {
 		ChuangLanSmsUtil.getInstance().sendSmsByMobile("13817367247", "123456");
 	}
