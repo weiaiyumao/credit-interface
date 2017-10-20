@@ -3,6 +3,7 @@ package main.java.cn.service;
 import java.util.List;
 
 import main.java.cn.common.BackResult;
+import main.java.cn.domain.ErpTradeDomain;
 import main.java.cn.domain.TrdOrderDomain;
 import main.java.cn.domain.UserAccountDomain;
 
@@ -20,7 +21,7 @@ public interface UserAccountBusService {
 	 * @param trdOrderDomain
 	 * @return
 	 */
-	BackResult<Boolean> rechargeOrRefunds(TrdOrderDomain trdOrderDomain);
+	BackResult<ErpTradeDomain> rechargeOrRefunds(TrdOrderDomain trdOrderDomain);
 	
 	/**
 	 * 根据用户手机号码查询 订单信息

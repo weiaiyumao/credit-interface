@@ -37,6 +37,8 @@ public class ChuangLanSmsUtil {
 	public static String ACCOUNT = "N9229578";
 		// 用户平台API密码(非登录密码)
 	public static String PSWD = "74kGi3wge";
+	
+	
 
 	/**
 	 * 
@@ -213,6 +215,38 @@ public class ChuangLanSmsUtil {
 		
 		return smsSingleResponse.getCode().equals("0") ? true : false;
 	}
+	
+	/**
+	 * 账户二次清洗 验证手机号码是否为真实手机号码
+	 */
+	public Boolean sendSmsByMobileForTwoTest(String mobile) {
+		
+		// 请求地址请登录253云通讯自助通平台查看或者询问您的商务负责人获取
+		String smsSingleRequestServerUrl = "http://smssh1.253.com/msg/send/json";
+		// 短信内容
+		String msg = "";
+		// 手机号码
+		String phone = mobile;
+		// 状态报告
+		String report = "true";
+
+		SmsSendRequest smsSingleRequest = new SmsSendRequest("M0066451", "cmVAf5eSNFda60", msg, phone, report);
+
+		String requestJson = JSON.toJSONString(smsSingleRequest);
+
+		String response = sendSmsByPost(smsSingleRequestServerUrl, requestJson);
+
+		SmsSendResponse smsSingleResponse = JSON.parseObject(response, SmsSendResponse.class);
+		
+		return smsSingleResponse.getCode().equals("0") ? true : false;
+	}
+	
+	
+	
+//	账号：M0066451
+//	密码：
+	
+	
 	
 	public static void main(String[] args) {
 		ChuangLanSmsUtil.getInstance().sendSmsByMobile("13817367247", "123456");

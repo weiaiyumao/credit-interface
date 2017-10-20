@@ -13,7 +13,7 @@ public class TrdOrderDomain implements Serializable{
 
 	private static final long serialVersionUID = -8904924027193308451L;
 
-private Integer id;
+	private Integer id;
 	
 	private Integer creUserId; // 关联用户ID
 	
@@ -44,6 +44,8 @@ private Integer id;
 	private Date createTime; // 创建时间
 	
 	private Date updateTime; // 修改时间
+	
+	private String mobile; // 用户手机号码
 	
 	public Integer getId() {
 		return id;
@@ -171,6 +173,14 @@ private Integer id;
 
 	public void setProductsId(Integer productsId) {
 		this.productsId = productsId;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
 	}
 	
 	
