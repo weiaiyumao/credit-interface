@@ -9,6 +9,8 @@ public class UserAccountDomain implements Serializable{
 	private Integer creUserId;
 	
 	private Integer account;
+	
+	private Integer apiAccount;
 
 	public Integer getCreUserId() {
 		return creUserId;
@@ -24,6 +26,14 @@ public class UserAccountDomain implements Serializable{
 
 	public void setAccount(Integer account) {
 		this.account = account;
+	}
+
+	public Integer getApiAccount() {
+		return apiAccount;
+	}
+
+	public void setApiAccount(Integer apiAccount) {
+		this.apiAccount = apiAccount;
 	}
 	
 	
