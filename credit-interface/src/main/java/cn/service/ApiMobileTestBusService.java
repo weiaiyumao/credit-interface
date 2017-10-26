@@ -18,4 +18,14 @@ public interface ApiMobileTestBusService {
 	 * @return
 	 */
 	BackResult<List<MobileInfoDomain>> findByMobileNumbers(String mobileNumbers);
+	
+	/**
+	 * 对外api账户2次清洗接口
+	 * @param apiName
+	 * @param password
+	 * @param ip
+	 * @param mobileNumbers
+	 * @return
+	 */
+//	BackResult<List<MobileInfoDomain>> findByMobileNumbers(String apiName,String password,String ip,String mobileNumbers);
 }

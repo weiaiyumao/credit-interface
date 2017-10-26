@@ -31,4 +31,19 @@ public class ResultCode {
 	 * session 登录过期
 	 */
 	public static final String RESULT_SESSION_STALED = "999994";
+	
+	/**
+	 * 对外api接口校验商户信息不存在
+	 */
+	public static final String RESULT_API_NOTACCOUNT = "999997";
+	
+	/**
+	 * 对外api接口校验商户ip信息不合法
+	 */
+	public static final String RESULT_API_NOTIPS = "999996";
+	
+	/**
+	 * 对外api接口校验商户剩余可使用条数不够
+	 */
+	public static final String RESULT_API_NOTCOUNT = "999995";
 }

@@ -19,6 +19,10 @@ public class MobileInfoDomain implements Serializable{
 	private String area; // 地区
 	
 	private String numberType; // 号码类型
+	
+	private String chargesStatus; // 验证状态 0 不收费  1:收费
+	
+	private String status; // 1：实号  0：空号 
 
 	public String getMobile() {
 		return mobile;
@@ -51,5 +55,22 @@ public class MobileInfoDomain implements Serializable{
 	public void setNumberType(String numberType) {
 		this.numberType = numberType;
 	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getChargesStatus() {
+		return chargesStatus;
+	}
+
+	public void setChargesStatus(String chargesStatus) {
+		this.chargesStatus = chargesStatus;
+	}
+	
 	
 }

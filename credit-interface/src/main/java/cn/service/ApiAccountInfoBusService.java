@@ -18,4 +18,22 @@ public interface ApiAccountInfoBusService {
 	 * @return
 	 */
 	BackResult<ApiAccountInfoDomain> updateApiAccountInfo(ApiAccountInfoDomain domain);
+	
+	/**
+	 * 根据账户名和密码或者对象
+	 * @param name
+	 * @param password
+	 * @return
+	 */
+	BackResult<ApiAccountInfoDomain> findByNameAndPwd(String name, String password);
+	
+	/**
+	 * api账户信息检测
+	 * @param apiName
+	 * @param password
+	 * @param ip
+	 * @param checkCount
+	 * @return
+	 */
+	BackResult<Integer> checkApiAccount(String apiName,String password,String ip,int checkCount);
 }
