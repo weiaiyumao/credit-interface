@@ -124,7 +124,7 @@ public class ChuangLanSmsUtil {
 		// 请求地址请登录253云通讯自助通平台查看或者询问您的商务负责人获取
 		String smsSingleRequestServerUrl = "http://smssh1.253.com/msg/send/json";
 		// 短信内容
-		String msg = "尊敬的客户您好：您本次成功冲值" + number + "条己到账，请登陆shdb.253.com查看";
+		String msg = "尊敬的客户您好：您本次成功冲值" + number + "条己到账，请登陆data.253.com查看";
 		// 手机号码
 		String phone = mobile;
 		// 状态报告
@@ -149,7 +149,7 @@ public class ChuangLanSmsUtil {
 		// 请求地址请登录253云通讯自助通平台查看或者询问您的商务负责人获取
 		String smsSingleRequestServerUrl = "http://smssh1.253.com/msg/send/json";
 		// 短信内容
-		String msg = "尊敬的客户您好：您的实号检测报告己完成，请登陆shdb.253.com查收";
+		String msg = "尊敬的客户您好：您的实号检测报告己完成，请登陆data.253.com查收";
 		// 手机号码
 		String phone = mobile;
 		// 状态报告
@@ -199,7 +199,7 @@ public class ChuangLanSmsUtil {
 		// 请求地址请登录253云通讯自助通平台查看或者询问您的商务负责人获取
 		String smsSingleRequestServerUrl = "http://smssh1.253.com/msg/send/json";
 		// 短信内容
-		String msg = "尊敬的用户您好，非常抱歉的通知您，由于系统原因，您本次实号检测业务未能正常进行，请登陆shdb.253.com 重新检测，本次检测不扣费，如有疑问请咨询页面客服";
+		String msg = "尊敬的用户您好，非常抱歉的通知您，由于系统原因，您本次实号检测业务未能正常进行，请登陆data.253.com 重新检测，本次检测不扣费，如有疑问请咨询页面客服";
 		// 手机号码
 		String phone = mobile;
 		// 状态报告
@@ -244,12 +244,12 @@ public class ChuangLanSmsUtil {
 	
 	
 //	账号：M0066451
-//	密码：
+//	密码：cmVAf5eSNFda60
 	
 	
 	
 	public static void main(String[] args) {
-		ChuangLanSmsUtil.getInstance().sendSmsByMobile("13817367247", "123456");
+		ChuangLanSmsUtil.getInstance().sendSmsByMobile("12345211452", "123456");
 	}
 
 }
