@@ -28,5 +28,9 @@ public class BackResult<T> {
 		this.resultCode = ResultCode.RESULT_SUCCEED;
 		this.resultMsg = "成功";
 	}
-	
+	public BackResult(String resultCode,String resultMsg){
+		this.resultCode = resultCode;
+		this.resultMsg = resultMsg;
+		this.setResultObj(null);
+	}
 }

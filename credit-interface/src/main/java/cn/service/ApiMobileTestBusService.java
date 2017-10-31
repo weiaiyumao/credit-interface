@@ -17,7 +17,7 @@ public interface ApiMobileTestBusService {
 	 * @param mobileNumbers
 	 * @return
 	 */
-	BackResult<List<MobileInfoDomain>> findByMobileNumbers(String mobileNumbers);
+	BackResult<List<MobileInfoDomain>> findByMobileNumbers(String mobileNumbers,String userId);
 	
 	/**
 	 * 对外api账户2次清洗接口

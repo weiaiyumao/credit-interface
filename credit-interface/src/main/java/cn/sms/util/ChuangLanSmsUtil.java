@@ -241,6 +241,34 @@ public class ChuangLanSmsUtil {
 		return smsSingleResponse.getCode().equals("0") ? true : false;
 	}
 	
+	/**
+	 * 注册验证码发送短信
+	 * @param mobile
+	 * @param code
+	 * @return
+	 */
+	public Boolean sendYxByMobile(String mobile) {
+		
+		// 请求地址请登录253云通讯自助通平台查看或者询问您的商务负责人获取
+		String smsSingleRequestServerUrl = "http://smssh1.253.com/msg/send/json";
+		// 短信内容
+		String msg = "【雅戈尔】秋季夹克特价，原价1360元，现二件仅298元，仅限今日开抢。点 http://mall-y.com/index.php?m=Home&c=garment&a=details&good=qk2&hmsr=ad_konghao&hmpl=253 抢购买一送二货到付款.退订回T";
+		// 手机号码
+		String phone = mobile;
+		// 状态报告
+		String report = "true";
+
+		SmsSendRequest smsSingleRequest = new SmsSendRequest("M0066451", "cmVAf5eSNFda60", msg, phone, report);
+
+		String requestJson = JSON.toJSONString(smsSingleRequest);
+
+		String response = sendSmsByPost(smsSingleRequestServerUrl, requestJson);
+
+		SmsSendResponse smsSingleResponse = JSON.parseObject(response, SmsSendResponse.class);
+		
+		return smsSingleResponse.getCode().equals("0") ? true : false;
+	}
+	
 	
 	
 //	账号：M0066451
@@ -249,7 +277,7 @@ public class ChuangLanSmsUtil {
 	
 	
 	public static void main(String[] args) {
-		ChuangLanSmsUtil.getInstance().sendSmsByMobile("12345211452", "123456");
+		ChuangLanSmsUtil.getInstance().sendYxByMobile("13817367247");
 	}
 
 }
