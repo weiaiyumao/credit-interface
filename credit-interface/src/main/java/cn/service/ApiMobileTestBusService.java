@@ -2,8 +2,11 @@ package main.java.cn.service;
 
 import java.util.List;
 
+
 import main.java.cn.common.BackResult;
 import main.java.cn.domain.MobileInfoDomain;
+import main.java.cn.domain.MobileTestLogDomain;
+import main.java.cn.domain.page.PageDomain;
 
 /**
  * api 账号2次清洗接口
@@ -28,4 +31,10 @@ public interface ApiMobileTestBusService {
 	 * @return
 	 */
 //	BackResult<List<MobileInfoDomain>> findByMobileNumbers(String apiName,String password,String ip,String mobileNumbers);
+	
+	/**
+	 * 分页获取检测结果列表
+	 * @return
+	 */
+	BackResult<PageDomain<MobileTestLogDomain>> getPageByUserId(int pageNo,int pageSize,String userId);
 }
