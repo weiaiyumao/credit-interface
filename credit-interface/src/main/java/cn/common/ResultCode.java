@@ -46,4 +46,9 @@ public class ResultCode {
 	 * 对外api接口校验商户剩余可使用条数不够
 	 */
 	public static final String RESULT_API_NOTCOUNT = "999985";
+	
+	/**
+	 * 请求方不能并发请求
+	 */
+	public static final String RESULT_API_NOTCONCURRENT = "999984";
 }
