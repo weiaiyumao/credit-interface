@@ -14,6 +14,8 @@ public class MobileTestLogDomain implements Serializable{
 
 	private String id;
 	
+	private String orderNo;
+	
 	private String userId; // 用户ID
 	
 	private String mobile; // 手机号码
@@ -100,6 +102,20 @@ public class MobileTestLogDomain implements Serializable{
 
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	/**
+	 * @return the orderNo
+	 */
+	public String getOrderNo() {
+		return orderNo;
+	}
+
+	/**
+	 * @param orderNo the orderNo to set
+	 */
+	public void setOrderNo(String orderNo) {
+		this.orderNo = orderNo;
 	}
 	
 	
