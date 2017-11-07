@@ -33,6 +33,13 @@ public interface ApiMobileTestBusService {
 //	BackResult<List<MobileInfoDomain>> findByMobileNumbers(String apiName,String password,String ip,String mobileNumbers);
 	
 	/**
+	 * 根据手机号码查询手机状态
+	 * @param mobile
+	 * @return
+	 */
+	BackResult<Boolean> findByMobile(String mobile,String userId);
+	
+	/**
 	 * 分页获取检测结果列表
 	 * @return
 	 */
