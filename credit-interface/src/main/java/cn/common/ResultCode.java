@@ -51,4 +51,43 @@ public class ResultCode {
 	 * 请求方不能并发请求
 	 */
 	public static final String RESULT_API_NOTCONCURRENT = "999984";
+	
+	
+	
+	// ----------------------------账户二次清洗CODE----------------------------------------
+	
+	/**
+	 * API账户名不能为空
+	 */
+	public static final String RESULT_RCAPI_NOTAPINAME = "888889";
+	
+	/**
+	 * API密码不能为空
+	 */
+	public static final String RESULT_RCAPI_MOTAPIPWD = "888888";
+	
+	/**
+	 * API绑定ＩＰ访问地址校验失败
+	 */
+	public static final String RESULT_RCAPI_JYAPIIP = "888887";
+	
+	/**
+	 * API绑定回调地址异常
+	 */
+	public static final String RESULT_RCAPI_CALLBACKURL = "888886";
+	
+	/**
+	 * 商户查询超过总条数限制
+	 */
+	public static final String RESULT_RCAPI_THREADUPPERLIMIT = "888885";
+	
+	/**
+	 * 单次查询最大条数限制
+	 */
+	public static final String RESULT_RCAPI_SINGLIMIT = "888884";
+	
+	/**
+	 * 手机号码格式不正确
+	 */
+	public static final String RESULT_RCAPI_MOBILESFORMATEX = "888883";
 }
