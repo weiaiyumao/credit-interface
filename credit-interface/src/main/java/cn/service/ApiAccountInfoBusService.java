@@ -36,4 +36,13 @@ public interface ApiAccountInfoBusService {
 	 * @return
 	 */
 	BackResult<Integer> checkApiAccount(String apiName,String password,String ip,int checkCount);
+	
+	/**
+	 * api账户信息检测
+	 * @param apiName
+	 * @param password
+	 * @param ip
+	 * @return
+	 */
+	BackResult<Integer> checkApiAccount(String apiName,String password,String ip);
 }
