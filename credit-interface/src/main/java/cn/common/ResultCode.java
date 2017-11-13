@@ -13,6 +13,11 @@ public class ResultCode {
 	public static final String RESULT_FAILED  ="999999";
 	
 	/**
+	 * ip地址超过每天注册的总量
+	 */
+	public static final String RESULT_REGISTERFAILED  ="999991";
+	
+	/**
 	 * 业务异常
 	 */
 	public static final String RESULT_BUSINESS_EXCEPTIONS = "999998";
