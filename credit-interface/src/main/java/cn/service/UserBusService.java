@@ -32,4 +32,11 @@ public interface UserBusService {
 	 * @return
 	 */
 	BackResult<CreUserDomain> updateCreUser(CreUserDomain creUserDomain);
+	
+	/**
+	 * 修改账户邮箱
+	 * @param creUserDomain
+	 * @return
+	 */
+	BackResult<CreUserDomain> updateCreUser(String userPhone,String email);
 }

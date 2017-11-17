@@ -9,6 +9,8 @@ public class RunTestDomian implements Serializable{
 	private int runCount;
 	
 	private String status; // 1执行中 2执行结束 3执行异常 
+	
+	private String mobiles;
 
 	public int getRunCount() {
 		return runCount;
@@ -25,6 +27,24 @@ public class RunTestDomian implements Serializable{
 	public void setStatus(String status) {
 		this.status = status;
 	}
+
+	/**
+	 * @return the mobiles
+	 */
+	public String getMobiles() {
+		return mobiles;
+	}
+
+	/**
+	 * @param mobiles the mobiles to set
+	 */
+	public void setMobiles(String mobiles) {
+		this.mobiles = mobiles;
+	}
+
+	
+
+	
 	
 	
 
