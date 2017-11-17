@@ -27,6 +27,13 @@ public interface UserBusService {
 	BackResult<CreUserDomain> findOrsaveUser(CreUserDomain creUserDomain);
 	
 	/**
+	 * 激活账户
+	 * @param creUserDomain
+	 * @return
+	 */
+	BackResult<CreUserDomain> activateUser(CreUserDomain creUserDomain);
+	
+	/**
 	 * 修改用户信息
 	 * @param creUserDomain
 	 * @return
