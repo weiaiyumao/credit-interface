@@ -37,4 +37,6 @@ public interface ApiMobileTestBusService {
 	 * @return
 	 */
 	BackResult<PageDomain<MobileTestLogDomain>> getPageByUserId(int pageNo,int pageSize,String userId);
+	
+	BackResult<MobileInfoDomain> findByMobile(String mobile,String userId);
 }
