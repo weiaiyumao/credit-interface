@@ -11,6 +11,8 @@ public class PageDomain<T> {
 	private int numPerPage; // 每页显示多行
 	
 	private int totalPages; // 总页数
+	
+	private int totalNumber; // 总条数
 
 	/**
 	 * @return the tlist
@@ -66,6 +68,20 @@ public class PageDomain<T> {
 	 */
 	public void setCurrentPage(int currentPage) {
 		this.currentPage = currentPage;
+	}
+
+	/**
+	 * @return the totalNumber
+	 */
+	public int getTotalNumber() {
+		return totalNumber;
+	}
+
+	/**
+	 * @param totalNumber the totalNumber to set
+	 */
+	public void setTotalNumber(int totalNumber) {
+		this.totalNumber = totalNumber;
 	}
 
 	
