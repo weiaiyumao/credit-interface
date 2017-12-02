@@ -46,4 +46,11 @@ public interface UserBusService {
 	 * @return
 	 */
 	BackResult<CreUserDomain> updateCreUser(String userPhone,String email);
+	
+	/**
+	 * 激活账户
+	 * @param creUserDomain
+	 * @return
+	 */
+	BackResult<CreUserDomain> activateUserZzt(CreUserDomain creUserDomain);
 }
