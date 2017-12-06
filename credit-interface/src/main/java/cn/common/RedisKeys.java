@@ -51,6 +51,15 @@ public class RedisKeys {
 	}
 	
 	/**
+	 * 获取账户二次清洗 检测方法加锁名称
+	 * @param userId
+	 * @return
+	 */
+	public String getzhlcfunKey(String mobile) {
+		return "zh:lcf:" + mobile;
+	}
+	
+	/**
 	 * 获取空号检测 redis锁的唯一标识
 	 * @param userId
 	 * @return
