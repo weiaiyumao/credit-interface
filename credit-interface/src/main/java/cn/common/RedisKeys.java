@@ -60,6 +60,15 @@ public class RedisKeys {
 	}
 	
 	/**
+	 * 获取空号API 检测方法加锁名称
+	 * @param userId
+	 * @return
+	 */
+	public String getkhApifunKey(String mobile) {
+		return "kh:api:" + mobile;
+	}
+	
+	/**
 	 * 获取空号检测 redis锁的唯一标识
 	 * @param userId
 	 * @return
