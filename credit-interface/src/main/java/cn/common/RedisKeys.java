@@ -77,4 +77,13 @@ public class RedisKeys {
 		return "kh:rli:" + userId;
 	}
 	
+	/**
+	 * 获取用户的对象信息key
+	 * @param userId
+	 * @return
+	 */
+	public String getSessUserInfo(String mobile) {
+		return "re:sui:" + mobile;
+	}
+	
 }
