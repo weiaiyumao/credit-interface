@@ -182,6 +182,15 @@ public class TrdOrderDomain implements Serializable{
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
+
+	@Override
+	public String toString() {
+		return "TrdOrderDomain [id=" + id + ", creUserId=" + creUserId + ", orderNo=" + orderNo + ", tradeNo=" + tradeNo
+				+ ", clOrderNo=" + clOrderNo + ", productsId=" + productsId + ", number=" + number + ", money=" + money
+				+ ", payType=" + payType + ", payTime=" + payTime + ", type=" + type + ", status=" + status
+				+ ", deleteStatus=" + deleteStatus + ", version=" + version + ", createTime=" + createTime
+				+ ", updateTime=" + updateTime + ", mobile=" + mobile + "]";
+	}
 	
 	
 	
