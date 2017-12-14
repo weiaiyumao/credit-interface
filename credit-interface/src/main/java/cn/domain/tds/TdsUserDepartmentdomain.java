@@ -3,26 +3,28 @@ package main.java.cn.domain.tds;
 import java.io.Serializable;
 
 /**
- * : tds_function_role
+ * : tds_usre_department
  * 
  * 
  * @author Gen
  */
-public class TdsFunctionRoleDomain implements Serializable{
-    
+public class TdsUserDepartmentdomain implements Serializable{
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -1146966684149375247L;
+	private static final long serialVersionUID = -229103304743132404L;
 
-	// : id 	
+	//id : id 	
 	private Integer id; 
 	
-	//功能id : fun_id 	
-	private Integer funId; 
+	//用户id : useri_d 	
+	private Integer useriD; 
 	
-	//角色id : role_id 	
-	private Integer roleId; 
+	//部门id : depart_id 	
+	private Integer departId; 
+	
+	//备注 : remarks 	
+	private String remarks; 
 	
 	//创建时间 : create_time 	
 	private java.util.Date createTime; 
@@ -41,7 +43,7 @@ public class TdsFunctionRoleDomain implements Serializable{
 	
 
 	/**
-	 *  : id
+	 * id : id
 	 * 
 	 * @return 
 	 */
@@ -50,7 +52,7 @@ public class TdsFunctionRoleDomain implements Serializable{
 	}
 	
 	/**
-	 *  : id
+	 * id : id
 	 * 
 	 * @return 
 	 */
@@ -58,38 +60,55 @@ public class TdsFunctionRoleDomain implements Serializable{
 		this.id = id;
 	}
 	/**
-	 * 功能id : fun_id
+	 * 用户id : useri_d
 	 * 
 	 * @return 
 	 */
-	public Integer getFunId () {
-		return funId;
+	public Integer getUseriD () {
+		return useriD;
 	}
 	
 	/**
-	 * 功能id : fun_id
+	 * 用户id : useri_d
 	 * 
 	 * @return 
 	 */
-	public void setFunId (Integer funId) {
-		this.funId = funId;
+	public void setUseriD (Integer useriD) {
+		this.useriD = useriD;
 	}
 	/**
-	 * 角色id : role_id
+	 * 部门id : depart_id
 	 * 
 	 * @return 
 	 */
-	public Integer getRoleId () {
-		return roleId;
+	public Integer getDepartId () {
+		return departId;
 	}
 	
 	/**
-	 * 角色id : role_id
+	 * 部门id : depart_id
 	 * 
 	 * @return 
 	 */
-	public void setRoleId (Integer roleId) {
-		this.roleId = roleId;
+	public void setDepartId (Integer departId) {
+		this.departId = departId;
+	}
+	/**
+	 * 备注 : remarks
+	 * 
+	 * @return 
+	 */
+	public String getRemarks () {
+		return remarks;
+	}
+	
+	/**
+	 * 备注 : remarks
+	 * 
+	 * @return 
+	 */
+	public void setRemarks (String remarks) {
+		this.remarks = remarks;
 	}
 	/**
 	 * 创建时间 : create_time

@@ -3,26 +3,28 @@ package main.java.cn.domain.tds;
 import java.io.Serializable;
 
 /**
- * : tds_function_role
+ * : tds_department
  * 
  * 
  * @author Gen
  */
-public class TdsFunctionRoleDomain implements Serializable{
-    
+public class TdsDepartmentDomain implements Serializable{
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -1146966684149375247L;
+	private static final long serialVersionUID = -4535091220533151548L;
 
-	// : id 	
+	//部门id : id 	
 	private Integer id; 
 	
-	//功能id : fun_id 	
-	private Integer funId; 
+	//部门名称 : Name 	
+	private String name; 
 	
-	//角色id : role_id 	
-	private Integer roleId; 
+	//备注 : remarks 	
+	private String remarks; 
+	
+	//父级部门id : parent_id 	
+	private Integer parentId; 
 	
 	//创建时间 : create_time 	
 	private java.util.Date createTime; 
@@ -41,7 +43,7 @@ public class TdsFunctionRoleDomain implements Serializable{
 	
 
 	/**
-	 *  : id
+	 * 部门id : id
 	 * 
 	 * @return 
 	 */
@@ -50,7 +52,7 @@ public class TdsFunctionRoleDomain implements Serializable{
 	}
 	
 	/**
-	 *  : id
+	 * 部门id : id
 	 * 
 	 * @return 
 	 */
@@ -58,38 +60,55 @@ public class TdsFunctionRoleDomain implements Serializable{
 		this.id = id;
 	}
 	/**
-	 * 功能id : fun_id
+	 * 部门名称 : Name
 	 * 
 	 * @return 
 	 */
-	public Integer getFunId () {
-		return funId;
+	public String getName () {
+		return name;
 	}
 	
 	/**
-	 * 功能id : fun_id
+	 * 部门名称 : Name
 	 * 
 	 * @return 
 	 */
-	public void setFunId (Integer funId) {
-		this.funId = funId;
+	public void setName (String name) {
+		this.name = name;
 	}
 	/**
-	 * 角色id : role_id
+	 * 备注 : remarks
 	 * 
 	 * @return 
 	 */
-	public Integer getRoleId () {
-		return roleId;
+	public String getRemarks () {
+		return remarks;
 	}
 	
 	/**
-	 * 角色id : role_id
+	 * 备注 : remarks
 	 * 
 	 * @return 
 	 */
-	public void setRoleId (Integer roleId) {
-		this.roleId = roleId;
+	public void setRemarks (String remarks) {
+		this.remarks = remarks;
+	}
+	/**
+	 * 父级部门id : parent_id
+	 * 
+	 * @return 
+	 */
+	public Integer getParentId () {
+		return parentId;
+	}
+	
+	/**
+	 * 父级部门id : parent_id
+	 * 
+	 * @return 
+	 */
+	public void setParentId (Integer parentId) {
+		this.parentId = parentId;
 	}
 	/**
 	 * 创建时间 : create_time
