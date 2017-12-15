@@ -3,7 +3,7 @@ package main.java.cn.domain.tds;
 import java.io.Serializable;
 
 /**
- * : tds_function_role
+ * :功能与角色
  * 
  * 
  * @author Gen

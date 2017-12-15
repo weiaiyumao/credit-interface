@@ -7,7 +7,7 @@ import main.java.cn.domain.page.PageDomain;
 import main.java.cn.domain.tds.TdsUserDomain;
 
 /**
- * : tds_user_role
+ * : 用户外服务接口
  * 
  * 
  * @author Gen

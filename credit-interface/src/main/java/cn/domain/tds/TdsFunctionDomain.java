@@ -3,7 +3,7 @@ package main.java.cn.domain.tds;
 import java.io.Serializable;
 
 /**
- * 模块实体对象
+ * 功能对象
  * 
  * @author ChuangLan
  *

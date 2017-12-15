@@ -3,7 +3,7 @@ package main.java.cn.domain.tds;
 import java.io.Serializable;
 
 /**
- * : tds_user
+ * : 用户
  * 
  * 
  * @author Gen
@@ -74,6 +74,15 @@ public class TdsUserDomain implements Serializable{
 	//头角色 : role 	
 	private String role;
 	
+	
+	private String source;
+	
+	public String getSource() {
+		return source;
+	}
+	public void setSource(String source) {
+		this.source = source;
+	}
 	public void setRole(String role) {
 		this.role = role;
 	}
