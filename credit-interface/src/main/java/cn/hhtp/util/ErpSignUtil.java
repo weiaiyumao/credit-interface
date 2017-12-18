@@ -269,7 +269,7 @@ public class ErpSignUtil {
 	}
 
 	private static final char[] bcdLookup = { '0', '1', '2', '3', '4', '5',
-			'6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };
+			'6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'l', 'z' };
 	
 	/**
 	 * @param args
@@ -277,15 +277,16 @@ public class ErpSignUtil {
 	public static void main(String[] args) {
 		
 		// TODO Auto-generated method stub
-		GenerateKeyPair("liCaiPay_HRD800");
+//		GenerateKeyPair("liCaiPay_HRD800");
 		
 		String prikeyvalue = "30820277020100300d06092a864886f70d0101010500048202613082025d02010002818100c44135e2f8dc957ace66a36efa4d8f069fb337fcb95f6cc4b39df67be496b4fcee3d857db0f18fd16ef785f7ae43ea9ecc7fd95ed4f02f50f113a4ec01dc3830598a635adb6a2ebd5a0434a856e301bdf99e6dcf92c8c94f996ae0da40da3fd69ba3ef44fe0348772f7eaa234adfb9989b00e1ae685849f67326112c4fc05dcd02030100010281800cd7fbafd3fb93a8cad33ac4eb8aa1de9c1afd82039bb4219763b21adf95e158603b147e6a5314c76f0cb1eec8afd72df75232a69b26f0e1ca352fe8e6224467004e19c533a57005c23bc6a420999f97b6afda94759684593410ff0ca12f1c505789c1380de26eba9f8ea575ceb3449a49b3082abce41b93c9d4794c40d9b8a1024100e28c42fbe2d53a4b3537744abea4128d82f69f47ba1e52f4eb2e9cb7a59a0d39c364979679f539317d8dc8d4df863f50503568a194aaef0d0651e2b739759b05024100ddc4c31ef6096cd2f11415e756d7d7a6fc8037cd03a4700b4578c84e48a89f09b94388febad1adcc9268e92872ce53ee06caa52c475c640cdaefcf27110a8229024100a0f01d81cd51c6f8b8946d83cfccc4f54ccd20b816cb0609c1ad3a5de841f91548ee8415bd0bed16706831fcafd231d63f34c1e0cfb962db30db29211aaba675024100982a7257c42a236979d176560dd87c382ff92a5099b732ca09191f17d7f31b6ce899d65e3281bce7296ea2cd06395c8d6e4b8d9a1c3ce0c991500aab9b9dc24102400db81e9cc65fcdb132dc4b19747a9c99cd504deeff89edee2a43ec4dae089c865f5f43af2c462b8278c1fddc423a3127907c540618f5e5ac412e9b66480ad090";// 这是GenerateKeyPair输出的私钥编码
 		String pubkeyvalue = "30819f300d06092a864886f70d010101050003818d0030818902818100c44135e2f8dc957ace66a36efa4d8f069fb337fcb95f6cc4b39df67be496b4fcee3d857db0f18fd16ef785f7ae43ea9ecc7fd95ed4f02f50f113a4ec01dc3830598a635adb6a2ebd5a0434a856e301bdf99e6dcf92c8c94f996ae0da40da3fd69ba3ef44fe0348772f7eaa234adfb9989b00e1ae685849f67326112c4fc05dcd0203010001";// 这是GenerateKeyPair输出的公钥编码
 		
-		String originfo = "orderId=10dkfadsfksdkssdkd&amount=80&orderTime=20060509"; // 要签名的信息
+		String originfo = "13817367247"; // 要签名的信息
 //		String signedinfo = "562da8483c91c31c9fcd247e00754c9c315a7d7f145181b066b2fb72fa80778c8afce272074655633ab29b4e94a448a5ee18710e895621759dfc80e26231a2afe8414d5d6b8ed5ddceb980effbc38b9f35c0fb8c1ba4a170f95011b4d7296d4594c9d2829d8ec073618153824bd52c47f9b5083d330689fd0667385a4897393b";
 
 		String signedinfo = sign(prikeyvalue, originfo);
+		System.out.println(signedinfo);
 		boolean rc = verify(pubkeyvalue, signedinfo, originfo);
 		System.out.println("rc:"+rc);
 	}
