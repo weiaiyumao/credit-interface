@@ -74,8 +74,8 @@ public class PageDto  implements Serializable{
 
 	
 	 public PageDto(Integer currentPage,Integer pageSize){
-		 if(currentPage<=0)currentPage=1;
-		 if(pageSize<=0)pageSize=10;
+		 if(null==currentPage || currentPage<=0)currentPage=1;
+		 if(null==pageSize || pageSize<=0)pageSize=10;
 		 this.currentPage=(currentPage-1)*pageSize;
 		 this.numPerPage=pageSize;
 		 

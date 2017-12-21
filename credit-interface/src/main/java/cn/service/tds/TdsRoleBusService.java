@@ -3,6 +3,7 @@ package main.java.cn.service.tds;
 import java.util.List;
 
 import main.java.cn.common.BackResult;
+import main.java.cn.domain.tds.TdsFunctionDomain;
 import main.java.cn.domain.tds.TdsRoleDomain;
 
 /**
@@ -19,5 +20,8 @@ public interface TdsRoleBusService{
     BackResult<TdsRoleDomain> updateTdsRole(TdsRoleDomain entity);
     
     BackResult<List<TdsRoleDomain>> selectAll(TdsRoleDomain entity);
+    
+    BackResult<List<TdsFunctionDomain>> queryfunByRoleId(Integer roleId);
+    
 	   
 }

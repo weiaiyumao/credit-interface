@@ -35,7 +35,7 @@ public interface TdsUserBusService{
      * @param entity
      * @return
      */
-	BackResult<TdsUserDomain> save(TdsUserDomain entity);
+	BackResult<TdsUserDomain> save(TdsUserDomain entity,String comName,String comUrl);
  	
 	/**
 	 * 删除用户
@@ -70,4 +70,10 @@ public interface TdsUserBusService{
     BackResult<PageDomain<TdsUserDomain>> pageSelectAll(TdsUserDomain entity,Integer pageSize,Integer curPage);
     
     
+    /**
+     * 根据用户电话获取对象信息
+     * @param phone
+     * @return
+     */
+    BackResult<TdsUserDomain> loadByPhone(String phone);
 }

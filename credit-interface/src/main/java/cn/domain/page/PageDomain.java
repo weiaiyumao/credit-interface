@@ -86,9 +86,9 @@ public class PageDomain<T> {
 
 	
 	 public PageDomain(Integer currentPage,Integer pageSize,Integer count){
-		 if(currentPage<=0)currentPage=1;
-		 if(pageSize<=0)pageSize=10;
-		 this.currentPage=(currentPage-1)*pageSize;
+		 if(null==currentPage || currentPage<=0)currentPage=1;
+		 if(null==pageSize || pageSize<=0)pageSize=10;
+		 this.currentPage=currentPage;
 		 this.numPerPage=pageSize;
 		 this.totalNumber=count;
 		 int counttotal=(totalNumber/pageSize);

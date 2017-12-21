@@ -34,4 +34,12 @@ public interface TdsUserRoleBusService{
      */
 	BackResult<List<TdsUserRoleDomain>> selectAll(TdsUserRoleDomain entity);
 	
+	
+	/**
+	 * 根据userid 修改角色与用户的信息
+	 * @param tur
+	 * @return
+	 */
+	BackResult<Integer> upStatusById(TdsUserRoleDomain entity,Integer loginUserId);
+	
 }

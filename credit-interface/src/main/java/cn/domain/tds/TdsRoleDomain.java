@@ -36,7 +36,21 @@ public class TdsRoleDomain implements Serializable{
 	//删除状态：0正常，1已删除 : is_deleted 	
 	private String isDeleted; 
 	
+	//添加状态 0：默认 1：自定义
+	private String isDefault;
 
+	/**
+	 * 添加状态 0：默认 1：自定义
+	 * @return
+	 */
+	public String getIsDefault() {
+		return isDefault;
+	}
+	
+	public void setIsDefault(String isDefault) {
+		this.isDefault = isDefault;
+	}
+	
 	/**
 	 * 角色id : id
 	 * 

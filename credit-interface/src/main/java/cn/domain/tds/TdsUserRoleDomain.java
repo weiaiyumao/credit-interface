@@ -39,6 +39,18 @@ public class TdsUserRoleDomain implements Serializable {
 	// 删除状态：0正常，1已删除 : is_deleted
 	private String isDeleted;
 
+	//账号状态： 0：正常  1;禁用
+    private String status;
+    
+    
+    public String getStatus() {
+		return status;
+	}
+    
+    public void setStatus(String status) {
+		this.status = status;
+	}
+	
 	/**
 	 * : id
 	 * 
@@ -182,5 +194,7 @@ public class TdsUserRoleDomain implements Serializable {
 	public void setIsDeleted(String isDeleted) {
 		this.isDeleted = isDeleted;
 	}
+	
+	
 
 }

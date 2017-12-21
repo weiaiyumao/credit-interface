@@ -1,8 +1,8 @@
 package main.java.cn.domain.tds;
 
+import java.io.Serializable;
 import java.util.Date;
 
-import main.java.cn.domain.page.PageDto;
 
 
 
@@ -13,7 +13,7 @@ import main.java.cn.domain.page.PageDto;
  * @author ChuangLan
  *
  */
-public class UserRoleDepartmentViewDomain extends PageDto {
+public class UserRoleDepartmentViewDomain implements Serializable {
 
 	
 	/**
@@ -33,8 +33,6 @@ public class UserRoleDepartmentViewDomain extends PageDto {
 	private String is_deleted;
     private Date endtime;  //结束时间
     private Date statime;  //开始时间
-    
-       
     
     
 	public Integer getId() {
