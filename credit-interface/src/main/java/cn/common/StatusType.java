@@ -5,12 +5,28 @@ public class StatusType {
 	/**
 	 * 0:用户注册添加
 	 */
-	public static final String ADD_CUSTOMER = "0";
+	public static final String ADD_REGISTER = "注册";
 
 	/**
 	 * 1：管理员后台添加
 	 */
-	public static final String ADD_ADMIN = "1";
+	public static final String ADD_ADMIN = "系统添加";
+	
+	/**
+	 * 2:商务
+	 */
+	public static final String ADD_SOURCE2 = "商务";
+	
+	/**
+	 * 3:分销商
+	 */
+	public static final String ADD_SOURCE3 = "分销商";
+	
+	
+	/**
+	 * 4:代理商
+	 */
+	public static final String ADD_SOURCE4 = "代理商";
 	
 	
 	/**

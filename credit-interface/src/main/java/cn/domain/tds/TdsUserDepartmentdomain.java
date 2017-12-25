@@ -18,7 +18,7 @@ public class TdsUserDepartmentdomain implements Serializable{
 	private Integer id; 
 	
 	//用户id : useri_d 	
-	private Integer useriD; 
+	private Integer userId; 
 	
 	//部门id : depart_id 	
 	private Integer departId; 
@@ -76,8 +76,8 @@ public class TdsUserDepartmentdomain implements Serializable{
 	 * 
 	 * @return 
 	 */
-	public Integer getUseriD () {
-		return useriD;
+	public Integer getUserId () {
+		return userId;
 	}
 	
 	/**
@@ -85,8 +85,8 @@ public class TdsUserDepartmentdomain implements Serializable{
 	 * 
 	 * @return 
 	 */
-	public void setUseriD (Integer useriD) {
-		this.useriD = useriD;
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
 	/**
 	 * 部门id : depart_id

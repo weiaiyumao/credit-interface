@@ -23,6 +23,7 @@ public class PageAuto implements Serializable {
 	private Integer pageNumber=0; //sql页
 
 	// ================
+	private Integer departId;  //部门id
 	private String departName; // 部门
 	private String roleName; // 角色名称
 	private String createTime; // 创建时间
@@ -33,33 +34,35 @@ public class PageAuto implements Serializable {
 	// ================
 	// Id
 	private Integer id;
-
 	// 名称
 	private String name;
-
 	// 账号状态 0：正常 1：禁用',
 	private String status;
-
 	// =============
+	
 	// 用户Id
 	private Integer userId;
-
+	private String  userName;
 	// 状态名 : sname
 	private String sname;
-
 	// 状态库id_运营商 : state_ope
 	private String stateOpe;
-
 	// 状态库id_属性 : state_pro
 	private String statePro;
-
 	// 录入人 : rinput
 	private String rinput;
-
 	// 创建者 : creater
 	private Integer creater;
 
 	
+	
+	public Integer getDepartId() {
+		return departId;
+	}
+	
+	public void setDepartId(Integer departId) {
+		this.departId = departId;
+	}
 	
 	public Integer getPageNumber() {
 		return pageNumber;
@@ -221,6 +224,12 @@ public class PageAuto implements Serializable {
 		this.name = name;
 	}
 	
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getUserName() {
+		return userName;
+	}
 	
    public PageAuto(){
 	   
