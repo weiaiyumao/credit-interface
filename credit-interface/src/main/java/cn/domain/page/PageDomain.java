@@ -6,13 +6,13 @@ public class PageDomain<T> {
 
 	private List<T> tlist;
 	
-	private int currentPage; // 当前页
+	private int currentPage=1; // 当前页
 
-	private int numPerPage; // 每页显示多行
+	private int numPerPage=10; // 每页显示多行
 	
-	private int totalPages; // 总页数
+	private int totalPages=0; // 总页数
 	
-	private int totalNumber; // 总条数
+	private int totalNumber=0; // 总条数
 
 	/**
 	 * @return the tlist
@@ -84,6 +84,23 @@ public class PageDomain<T> {
 		this.totalNumber = totalNumber;
 	}
 
+	
+	 public PageDomain(Integer currentPage,Integer pageSize,Integer count){
+		 if(null==currentPage || currentPage<=0)currentPage=1;
+		 if(null==pageSize || pageSize<=0)pageSize=10;
+		 this.currentPage=currentPage;
+		 this.numPerPage=pageSize;
+		 this.totalNumber=count;
+		 int counttotal=(totalNumber/pageSize);
+		 if ((totalNumber%pageSize)!=0) {
+			 counttotal++;
+		  }
+	    this.totalPages=counttotal;
+	 }
+   
+	 public PageDomain(){
+		 
+	 }
 	
 	
 	

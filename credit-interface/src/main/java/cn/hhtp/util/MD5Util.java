@@ -1,7 +1,12 @@
 package main.java.cn.hhtp.util;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+
+import org.apache.commons.codec.digest.Md5Crypt;
 
 public class MD5Util {
 	// 全局数组
@@ -55,9 +60,22 @@ public class MD5Util {
         return resultString;
     }
     
-    public static void main(String[] args) {
-    	// e10adc3949ba59abbe56e057f20f883e
-    	
-        System.out.println(MD5Util.getInstance().getMD5Code("123456"));
+    //二次加密
+    public static String convertMD5(String inStr) {
+		char[] a = inStr.toCharArray();
+		for (int i = 0; i < a.length; i++) {
+			a[i] = (char) (a[i] ^ 0x74);
+		}
+		String s = new String(a);
+		return s;
+	}
+    
+    
+    public static void main(String[] args) throws UnsupportedEncodingException {
+    	String s="12345678a";
+    	String md5=MD5Util.getInstance().getMD5Code(s);
+    	System.out.println("md5加密的：" + md5);
+		System.out.println("convertMD5加密的：" +URLEncoder.encode(convertMD5(md5),"utf-8"));
+		System.out.println("convertMD5解密的：" + convertMD5(convertMD5(md5)));
     }
 }

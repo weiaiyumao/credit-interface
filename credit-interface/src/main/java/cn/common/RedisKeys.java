@@ -86,4 +86,12 @@ public class RedisKeys {
 		return "re:sui:" + mobile;
 	}
 	
+	/**
+	 * 获取用户的对象信息key
+	 * @param userId
+	 * @return
+	 */
+	public String getUserInfokey(String mobile) {
+		return "tds:sui:" + mobile;
+	}
 }
