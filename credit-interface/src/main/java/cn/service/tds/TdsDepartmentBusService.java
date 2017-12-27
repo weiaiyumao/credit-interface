@@ -23,6 +23,9 @@ public interface TdsDepartmentBusService {
 	 * @return
 	 */
 	BackResult<List<TdsDepartmentDomain>> selectAll(TdsDepartmentDomain entity);
+	
+	
+
 
 	/**
 	 * 根据条件查询用户信息,角色，部门

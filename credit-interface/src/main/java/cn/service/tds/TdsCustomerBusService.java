@@ -29,5 +29,14 @@ public interface TdsCustomerBusService {
 	 */
 	BackResult<PageAuto> attorn(PageAuto auto);
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

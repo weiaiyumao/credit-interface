@@ -8,195 +8,211 @@ import java.io.Serializable;
  * 
  * @author Gen
  */
-public class TdsModularDomain implements Serializable{
-     
+public class TdsModularDomain implements Serializable {
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 2816658219643844181L;
 
-	//模块id : id 	
-	private Integer id; 
-	
-	//模块名称 : name 	
-	private String name; 
-	
-	//备注 : remarks 	
-	private String remarks; 
-	
-	//父级模块id : parent_id 	
-	private Integer parentId; 
-	
-	//创建时间 : create_time 	
-	private java.util.Date createTime; 
-	
-	//修改时间 : update_time 	
-	private java.util.Date updateTime; 
-	
-	//创建者 : creater 	
-	private Integer creater; 
-	
-	//修改者 : updater 	
-	private Integer updater; 
-	
-	//删除状态：0正常，1已删除 : is_deleted 	
-	private String isDeleted; 
-	
+	// 模块id : id
+	private Integer id;
+
+	// 模块名称 : name
+	private String name;
+
+	// 备注 : remarks
+	private String remarks;
+
+	// 父级模块id : parent_id
+	private Integer parentId;
+
+	// 创建时间 : create_time
+	private java.util.Date createTime;
+
+	// 修改时间 : update_time
+	private java.util.Date updateTime;
+
+	// 创建者 : creater
+	private Integer creater;
+
+	// 修改者 : updater
+	private Integer updater;
+
+	// 删除状态：0正常，1已删除 : is_deleted
+	private String isDeleted;
+
+	// 排序 : sort
+	private Integer sort;
+
+	public Integer getSort() {
+		return sort;
+	}
+
+	public void setSort(Integer sort) {
+		this.sort = sort;
+	}
 
 	/**
 	 * 模块id : id
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public Integer getId () {
+	public Integer getId() {
 		return id;
 	}
-	
+
 	/**
 	 * 模块id : id
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public void setId (Integer id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
+
 	/**
 	 * 模块名称 : name
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public String getName () {
+	public String getName() {
 		return name;
 	}
-	
+
 	/**
 	 * 模块名称 : name
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public void setName (String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
+
 	/**
 	 * 备注 : remarks
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public String getRemarks () {
+	public String getRemarks() {
 		return remarks;
 	}
-	
+
 	/**
 	 * 备注 : remarks
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public void setRemarks (String remarks) {
+	public void setRemarks(String remarks) {
 		this.remarks = remarks;
 	}
+
 	/**
 	 * 父级模块id : parent_id
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public Integer getParentId () {
+	public Integer getParentId() {
 		return parentId;
 	}
-	
+
 	/**
 	 * 父级模块id : parent_id
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public void setParentId (Integer parentId) {
+	public void setParentId(Integer parentId) {
 		this.parentId = parentId;
 	}
+
 	/**
 	 * 创建时间 : create_time
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public java.util.Date getCreateTime () {
+	public java.util.Date getCreateTime() {
 		return createTime;
 	}
-	
+
 	/**
 	 * 创建时间 : create_time
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public void setCreateTime (java.util.Date createTime) {
+	public void setCreateTime(java.util.Date createTime) {
 		this.createTime = createTime;
 	}
+
 	/**
 	 * 修改时间 : update_time
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public java.util.Date getUpdateTime () {
+	public java.util.Date getUpdateTime() {
 		return updateTime;
 	}
-	
+
 	/**
 	 * 修改时间 : update_time
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public void setUpdateTime (java.util.Date updateTime) {
+	public void setUpdateTime(java.util.Date updateTime) {
 		this.updateTime = updateTime;
 	}
+
 	/**
 	 * 创建者 : creater
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public Integer getCreater () {
+	public Integer getCreater() {
 		return creater;
 	}
-	
+
 	/**
 	 * 创建者 : creater
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public void setCreater (Integer creater) {
+	public void setCreater(Integer creater) {
 		this.creater = creater;
 	}
+
 	/**
 	 * 修改者 : updater
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public Integer getUpdater () {
+	public Integer getUpdater() {
 		return updater;
 	}
-	
+
 	/**
 	 * 修改者 : updater
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public void setUpdater (Integer updater) {
+	public void setUpdater(Integer updater) {
 		this.updater = updater;
 	}
+
 	/**
 	 * 删除状态：0正常，1已删除 : is_deleted
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public String getIsDeleted () {
+	public String getIsDeleted() {
 		return isDeleted;
 	}
-	
+
 	/**
 	 * 删除状态：0正常，1已删除 : is_deleted
 	 * 
-	 * @return 
+	 * @return
 	 */
-	public void setIsDeleted (String isDeleted) {
+	public void setIsDeleted(String isDeleted) {
 		this.isDeleted = isDeleted;
 	}
 
-
-  
 }

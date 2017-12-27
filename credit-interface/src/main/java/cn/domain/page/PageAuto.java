@@ -30,14 +30,17 @@ public class PageAuto implements Serializable {
 	private String contact; // 联系人
 	private String statTime; // 开始时间
 	private String endTime; // 结束时间
+	private String isDeleted;
 
 	// ================
 	// Id
 	private Integer id;
 	// 名称
 	private String name;
+	
 	// 账号状态 0：正常 1：禁用',
 	private String status;
+	
 	// =============
 	
 	// 用户Id
@@ -55,6 +58,13 @@ public class PageAuto implements Serializable {
 	private Integer creater;
 
 	
+	public String getIsDeleted() {
+		return isDeleted;
+	}
+	
+	public void setIsDeleted(String isDeleted) {
+		this.isDeleted = isDeleted;
+	}
 	
 	public Integer getDepartId() {
 		return departId;

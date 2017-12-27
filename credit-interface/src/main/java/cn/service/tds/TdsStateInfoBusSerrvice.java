@@ -27,4 +27,13 @@ public interface TdsStateInfoBusSerrvice {
 	 * @return
 	 */
 	BackResult<Integer> update(TdsStateInfoDomain domain);
+	
+	
+	/**
+	 * 新增状态库
+	 * @param userId
+	 * @param domain
+	 * @return
+	 */
+	BackResult<Integer> addState(Integer userId,TdsStateInfoDomain domain);
 }

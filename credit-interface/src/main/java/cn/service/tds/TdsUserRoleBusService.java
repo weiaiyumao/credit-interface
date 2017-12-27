@@ -40,6 +40,6 @@ public interface TdsUserRoleBusService{
 	 * @param tur
 	 * @return
 	 */
-	BackResult<Integer> upStatusById(TdsUserRoleDomain entity,Integer loginUserId);
+	BackResult<Integer> upStatusById(Integer id,String status);
 	
 }

@@ -4,6 +4,7 @@ import java.util.List;
 
 import main.java.cn.common.BackResult;
 import main.java.cn.domain.page.PageDomain;
+import main.java.cn.domain.tds.TdsCompanyDomain;
 import main.java.cn.domain.tds.TdsUserDomain;
 
 /**
@@ -35,7 +36,7 @@ public interface TdsUserBusService{
      * @param entity
      * @return
      */
-	BackResult<TdsUserDomain> save(TdsUserDomain entity,String comName,String comUrl);
+	BackResult<TdsUserDomain> save(TdsUserDomain entity);
  	
 	/**
 	 * 删除用户
@@ -44,12 +45,6 @@ public interface TdsUserBusService{
 	 */
 	BackResult<Integer> deleteById(Integer id);
   
-	/**
-	 * 修改用户
-	 * @param entity
-	 * @return
-	 */
-	BackResult<TdsUserDomain> update(TdsUserDomain entity);
     
 	/**
 	 * 查询用户
@@ -76,4 +71,22 @@ public interface TdsUserBusService{
      * @return
      */
     BackResult<TdsUserDomain> loadByPhone(String phone);
+    
+    
+    /**
+     * 编辑个人信息
+     * @param domain
+     * @return
+     */
+	BackResult<Integer> editUserInfo(TdsUserDomain domain);
+	
+	
+	
+    /**
+     * 编辑企业信息
+     * @param domain
+     * @return
+     */
+	BackResult<Integer> editComInfo(TdsCompanyDomain domain,Integer id,String userName,String phone,String contact);
+	
 }
