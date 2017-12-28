@@ -31,7 +31,14 @@ public class PageAuto implements Serializable {
 	private String statTime; // 开始时间
 	private String endTime; // 结束时间
 	private String isDeleted;
+    private String phone;  //手机号码
+    private Integer roleId; //角色id
+    private String customerName;  //客户名称
+    private String comUrl;
+    private String comName;
 
+    
+    private String parentUserId; //父级用户
 	// ================
 	// Id
 	private Integer id;
@@ -41,6 +48,8 @@ public class PageAuto implements Serializable {
 	// 账号状态 0：正常 1：禁用',
 	private String status;
 	
+	
+	private String passWord;
 	// =============
 	
 	// 用户Id
@@ -57,6 +66,61 @@ public class PageAuto implements Serializable {
 	// 创建者 : creater
 	private Integer creater;
 
+	
+	public String getParentUserId() {
+		return parentUserId;
+	}
+	
+	public void setParentUserId(String parentUserId) {
+		this.parentUserId = parentUserId;
+	}
+	
+	public String getComName() {
+		return comName;
+	}
+	
+	public void setComName(String comName) {
+		this.comName = comName;
+	}
+	public String getComUrl() {
+		return comUrl;
+	}
+	
+	public void setComUrl(String comUrl) {
+		this.comUrl = comUrl;
+	}
+	
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	
+	public String getCustomerName() {
+		return customerName;
+	}
+	
+	public Integer getRoleId() {
+		return roleId;
+	}
+	
+	public void setRoleId(Integer roleId) {
+		this.roleId = roleId;
+	}
+	
+	public String getPhone() {
+		return phone;
+	}
+	
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	
+	public String getPassWord() {
+		return passWord;
+	}
+	
+	public void setPassWord(String passWord) {
+		this.passWord = passWord;
+	}
 	
 	public String getIsDeleted() {
 		return isDeleted;
