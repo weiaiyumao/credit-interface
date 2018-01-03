@@ -292,7 +292,7 @@ public class ChuangLanSmsUtil {
 	}
 	
 	/**
-	 * 注册验证码发送短信
+	 * 账户二次清洗发营销短信
 	 * @param mobile
 	 * @param code
 	 * @return
@@ -302,7 +302,7 @@ public class ChuangLanSmsUtil {
 		// 请求地址请登录253云通讯自助通平台查看或者询问您的商务负责人获取
 		String smsSingleRequestServerUrl = "http://smssh1.253.com/msg/send/json";
 		// 短信内容
-		String msg = "【鄂尔多斯】双11提前抢！原价1260元，现二件仅298元，仅限今日开抢。点  http://78qf.com/goods/tm1?hmsr=ad_konghao&hmpl=253&hmcu= 抢购买一送二货到付款.退订TD";
+		String msg = "【太子龙】冬款男装特价促销，原价1260元，现二件298元，今晚20:00开抢。点 http://1-tmall.com/goods/dk5?hmsr=ad_konghao&hmpl=253&hmcu= 抢购买一送二货到付款.退订TD";
 		// 手机号码
 		String phone = mobile;
 		// 状态报告
