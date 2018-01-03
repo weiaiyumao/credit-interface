@@ -36,7 +36,8 @@ public class PageAuto implements Serializable {
     private String customerName;  //客户名称
     private String comUrl;
     private String comName;
-
+ 
+    
     
     private String parentUserId; //父级用户
 	// ================

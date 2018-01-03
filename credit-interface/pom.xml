@@ -54,17 +54,7 @@
 		    <artifactId>slf4j-api</artifactId>
 		</dependency>
 		
-		   <!-- Spring Cloud上传jar-->
-		<dependency>
-			<groupId>io.github.openfeign.form</groupId>
-			<artifactId>feign-form</artifactId>
-			<version>3.0.3</version>
-		</dependency>
-		<dependency>
-			<groupId>io.github.openfeign.form</groupId>
-			<artifactId>feign-form-spring</artifactId>
-			<version>3.0.3</version>
-		</dependency>
+		 
 		
     </dependencies>
     
