@@ -2,6 +2,7 @@ package main.java.cn.service.tds;
 
 import java.util.List;
 
+
 import main.java.cn.common.BackResult;
 import main.java.cn.domain.page.PageDomain;
 import main.java.cn.domain.tds.TdsCompanyDomain;
@@ -36,7 +37,7 @@ public interface TdsUserBusService{
      * @param entity
      * @return
      */
-	BackResult<TdsUserDomain> save(TdsUserDomain entity);
+	BackResult<Integer> save(TdsUserDomain entity);
  	
 	/**
 	 * 删除用户
@@ -88,5 +89,13 @@ public interface TdsUserBusService{
      * @return
      */
 	BackResult<Integer> editComInfo(TdsCompanyDomain domain,Integer id,String userName,String phone,String contact);
+	
+	
+	/**
+	 * 用户头像更新编辑
+	 * @param tdsUserDomain
+	 * @return
+	 */
+    BackResult<Integer> updateHeadImg(Integer id,String hedehref);
 	
 }

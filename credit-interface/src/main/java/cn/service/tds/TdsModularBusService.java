@@ -14,7 +14,7 @@ import main.java.cn.domain.tds.TdsModularDomain;
 public interface TdsModularBusService{
 
 	
-	 BackResult<TdsModularDomain> saveTdsModular(TdsModularDomain entity);
+	 BackResult<Integer> saveTdsModular(TdsModularDomain entity);
 	 
      BackResult<TdsModularDomain> updateTdsModular(TdsModularDomain entity);
      

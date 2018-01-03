@@ -4,6 +4,7 @@ import java.util.List;
 
 import main.java.cn.common.BackResult;
 import main.java.cn.domain.tds.TdsFunctionDomain;
+import main.java.cn.domain.tds.TdsModularDomain;
 
 /**
  * 模块外服务接口
@@ -19,7 +20,7 @@ public interface TdsFunctionBusService {
 	 * @param userId
 	 * @return
 	 */
-	BackResult<List<TdsFunctionDomain>> moduleLoadingByUsreId(Integer userId);
+	BackResult<List<TdsModularDomain>> moduleLoadingByUsreId(Integer userId);
 
 	BackResult<TdsFunctionDomain> saveTdsFunction(TdsFunctionDomain entity);
 

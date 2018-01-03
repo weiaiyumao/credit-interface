@@ -1,6 +1,7 @@
 package main.java.cn.domain.tds;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * 客户列表视图
@@ -21,13 +22,13 @@ public class TdsCustomerViewDomain  implements Serializable {
 	
 	private String departName;  //部门名称
 	
-	private String contact;   
+	private String contact;    //联系人
 	
-	private String phone;
+	private String phone;      //手机号码
 	
-	private String create_time;
+	private Date create_time;  //创建时间
 	
-	private String com_url; 
+	private String com_url;   //公司网址
 	
 	private String source;  //来源
 
@@ -79,11 +80,11 @@ public class TdsCustomerViewDomain  implements Serializable {
 		this.phone = phone;
 	}
 
-	public String getCreate_time() {
+	public Date getCreate_time() {
 		return create_time;
 	}
 
-	public void setCreate_time(String create_time) {
+	public void setCreate_time(Date create_time) {
 		this.create_time = create_time;
 	}
 

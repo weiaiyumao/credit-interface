@@ -1,12 +1,10 @@
 package main.java.cn.hhtp.util;
 
 import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import org.apache.commons.codec.digest.Md5Crypt;
 
 public class MD5Util {
 	// 全局数组

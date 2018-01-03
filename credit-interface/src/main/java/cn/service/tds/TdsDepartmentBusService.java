@@ -70,9 +70,9 @@ public interface TdsDepartmentBusService {
 	
 	
 	/**
-	 * 自定义模块
+	 * 功能管理add
 	 * @return
 	 */
-	BackResult<Integer> addModularFun(TdsFunctionDomain domain,Integer parentId);
+	BackResult<Integer> addFun(TdsFunctionDomain domain);
 
 }

@@ -15,5 +15,8 @@ public interface TdsCompanyBusService {
 	 * @return
 	 */
 	BackResult<List<TdsCompanyDomain>> selectCompanyAll();
+	
+	
+	BackResult<TdsCompanyDomain> loadComById(Integer id);
 
 }

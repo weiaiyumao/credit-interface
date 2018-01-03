@@ -1,6 +1,8 @@
 package main.java.cn.domain.tds;
 
 import java.io.Serializable;
+import java.util.List;
+
 
 /**
  * : 模块
@@ -44,6 +46,20 @@ public class TdsModularDomain implements Serializable {
 
 	// 排序 : sort
 	private Integer sort;
+	
+	
+	
+	private List<TdsFunctionDomain> listFun;
+	
+	
+	public List<TdsFunctionDomain> getListFun() {
+		return listFun;
+	}
+	
+	public void setListFun(List<TdsFunctionDomain> listFun) {
+		this.listFun = listFun;
+	}
+	
 
 	public Integer getSort() {
 		return sort;
@@ -52,6 +68,9 @@ public class TdsModularDomain implements Serializable {
 	public void setSort(Integer sort) {
 		this.sort = sort;
 	}
+	
+	
+	
 
 	/**
 	 * 模块id : id

@@ -1,5 +1,6 @@
 package main.java.cn.service.tds;
 
+
 import main.java.cn.common.BackResult;
 import main.java.cn.domain.page.PageDomain;
 import main.java.cn.domain.tds.TdsAccountBankDomain;
@@ -32,4 +33,13 @@ public interface TdsAccountBankBusService {
 	 * 新增保存
 	 */
 	BackResult<Integer> save(TdsAccountBankDomain domain,Integer loginUserId);
+	
+	
+	/**
+	 * 停用,删除
+	 * @param id
+	 * @return
+	 */
+    BackResult<TdsAccountBankDomain> loadById(Integer id);
+	
 }
