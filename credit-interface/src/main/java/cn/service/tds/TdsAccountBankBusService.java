@@ -36,7 +36,7 @@ public interface TdsAccountBankBusService {
 	
 	
 	/**
-	 * 停用,删除
+	 * 编辑
 	 * @param id
 	 * @return
 	 */

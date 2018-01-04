@@ -2,6 +2,30 @@ package main.java.cn.common;
 
 public class StatusType {
 
+	
+	
+	
+
+	/**
+	 * 进账驳回
+	 */
+	public static final String ENTER_REJECT = "进账驳回";
+	
+	
+	/**
+	 * 出账驳回
+	 */
+	public static final String OUT_REJECT = "出账驳回";
+	
+	
+	
+	/**
+	 * 退款驳回
+	 */
+	public static final String BACK_REJECT = "退款驳回";
+	
+	
+	
 	/**
 	 * 角色 业务员
 	 */
