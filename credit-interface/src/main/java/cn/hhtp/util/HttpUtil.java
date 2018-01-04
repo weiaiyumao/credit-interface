@@ -2,6 +2,7 @@ package main.java.cn.hhtp.util;
 
 
 import java.util.Iterator;
+import java.util.Set;
 
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.NameValuePair;
@@ -10,7 +11,7 @@ import org.apache.commons.httpclient.protocol.Protocol;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import net.sf.json.JSONObject;
+import com.alibaba.fastjson.JSONObject;
 
 /**
  * 请求工具类
@@ -28,11 +29,11 @@ public class HttpUtil {
         
 		PostMethod post = new PostMethod(url);
 		try {
-			@SuppressWarnings("rawtypes")
-			Iterator  iterator = jsonObject.keys();
+			Set<String>  iterator = jsonObject.keySet();
+			Iterator<String> it = iterator.iterator(); 
 			// 设置参数
-			while(iterator.hasNext()){
-				String key = (String) iterator.next();  
+			while(it.hasNext()){
+				String key = (String) it.next();  
 				String value = jsonObject.getString(key); 
 				post.addParameter(new NameValuePair(key,value));
 			}

@@ -1,7 +1,8 @@
 package main.java.cn.hhtp.service;
 
+import com.alibaba.fastjson.JSONObject;
+
 import main.java.cn.hhtp.util.HttpUtil;
-import net.sf.json.JSONObject;
 
 /**
  * 发送请求

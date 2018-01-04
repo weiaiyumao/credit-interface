@@ -12,13 +12,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Iterator;
+import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import net.sf.json.JSONObject;
+import com.alibaba.fastjson.JSONObject;
 
 public class ErpSignUtil {
 	
@@ -120,10 +121,10 @@ public class ErpSignUtil {
 	public static String signForRedirect(JSONObject jsonObject, String prikeyvalue, String signkey, String signparam){
 		StringBuffer returnStr = new StringBuffer();
 
-		@SuppressWarnings("rawtypes")
-		Iterator  iterator = jsonObject.keys();	
-		while(iterator.hasNext()){
-			String key = (String) iterator.next(); 
+		Set<String>  iterator = jsonObject.keySet();
+		Iterator<String> it = iterator.iterator(); 
+		while(it.hasNext()){
+			String key = (String) it.next(); 
 			String value = jsonObject.getString(key); 
 			String envalue = encodeVal(value);
 			returnStr.append(key).append("=").append(envalue).append("&");
@@ -138,7 +139,6 @@ public class ErpSignUtil {
 	public static String sign(JSONObject jsonObject, String prikeyvalue, String signkey) {
 		StringBuffer sb = new StringBuffer();
 
-		@SuppressWarnings("unchecked")
 		ArrayList<String> keyList = new ArrayList<String>(jsonObject.keySet());
 		
 		Collections.sort(keyList); 
