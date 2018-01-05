@@ -2,13 +2,15 @@ package main.java.cn.domain.tds;
 
 import java.io.Serializable;
 
+import main.java.cn.domain.page.BasePageParam;
+
 /**
  * :流水明细表
  * 
  * 
  * @author Gen
  */
-public class TdsSerualInfoDomain implements Serializable{
+public class TdsSerualInfoDomain extends BasePageParam implements Serializable{
 	
 	
 	/**

@@ -13,22 +13,57 @@ public class BasePageParam  {
 
 	private Integer numPerPage = 10; // 每页显示多行
 
-	private Date startTime; // 开始时间
+	private Date statTime; // 开始时间
 	
 	private Date endTime; // 结束时间
+	
+	
+	private Integer pageNumber=0; //sql页
+	
+	private  Integer selected=0; //选项查询
+	
+	private  String likeName;  //模糊查询
+	
+	
+	
+	
+	public Integer getSelected() {
+		return selected;
+	}
+	
+	public void setSelected(Integer selected) {
+		this.selected = selected;
+	}
+	
+	public void setLikeName(String likeName) {
+		this.likeName = likeName;
+	}
+	
+	public String getLikeName() {
+		return likeName;
+	}
+	
+	public Integer getPageNumber() {
+		return pageNumber;
+	}
+	
+	
+	public void setPageNumber(Integer pageNumber) {
+		this.pageNumber = pageNumber;
+	}
 	
 	/**
 	 * @return the startTime
 	 */
-	public Date getStartTime() {
-		return startTime;
+	public Date getStatTime() {
+		return statTime;
 	}
 
 	/**
 	 * @param startTime the startTime to set
 	 */
-	public void setStartTime(Date startTime) {
-		this.startTime = startTime;
+	public void setStatTime(Date statTime) {
+		this.statTime = statTime;
 	}
 
 	/**
