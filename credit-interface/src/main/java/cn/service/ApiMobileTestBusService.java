@@ -36,7 +36,7 @@ public interface ApiMobileTestBusService {
 	 * 分页获取检测结果列表
 	 * @return
 	 */
-	BackResult<PageDomain<MobileTestLogDomain>> getPageByUserId(int pageNo,int pageSize,String userId);
+	BackResult<PageDomain<MobileTestLogDomain>> getPageByUserId(int pageNo,int pageSize,String userId,String type);
 	
 	BackResult<MobileInfoDomain> findByMobile(String mobile,String userId);
 }
