@@ -11,7 +11,7 @@ import main.java.cn.domain.page.BasePageParam;
  * 
  * @author Gen
  */
-public class TdsMoneyApprovalDomain extends BasePageParam implements Serializable{
+public class TdsMoneyApprovalDomain extends BasePageParam implements Serializable {
 
 	/**
 	 * 
@@ -60,7 +60,7 @@ public class TdsMoneyApprovalDomain extends BasePageParam implements Serializabl
 	// 开票状态 0未开票 1已开票 : billing
 	private String billing;
 
-	// 审核(1待审核  2已审核 3驳回  4到账 5线下开票 6 充账 )
+	// 审核(1待审核 2已审核 3驳回 4到账 5线下开票 6 充账 )
 	private String approvalStatus;
 
 	// 审核类型 1进账审核 2出账审核 3退款审核 : approval_type
@@ -76,55 +76,82 @@ public class TdsMoneyApprovalDomain extends BasePageParam implements Serializabl
 	private Integer updater;
 	// 修改时间 : update_time
 	private java.util.Date updateTime;
-	
-	
+
 	// 订单开始时间
-		private String startOrderTime;
-		// 订单结束时间
-		private String endOrderTime;
+	private String startOrderTime;
+	// 订单结束时间
+	private String endOrderTime;
 
-		// 到账开始时间
-		private String startArrivTime;
+	// 到账开始时间
+	private String startArrivTime;
 
-		// 到账结束
-		private String endArrivTime;
-		
-		
-		
-		
+	// 到账结束
+	private String endArrivTime;
+	
 
-		public String getStartOrderTime() {
-			return startOrderTime;
-		}
+	//下单人，创建人
+	private Integer creater;
+	
+	
+	private String lessName;
+	
+	
+	public String getLessName() {
+		return lessName;
+	}
+	
+	public void setLessName(String lessName) {
+		this.lessName = lessName;
+	}
+	
+	
+	/**
+	 * 下单人，创建人
+	 * @return
+	 */
+	public Integer getCreater() {
+		return creater;
+	}
+	
+	/**
+	 * 下单人，创建人
+	 * @param creater
+	 */
+	public void setCreater(Integer creater) {
+		this.creater = creater;
+	}
+	
+	public String getStartOrderTime() {
+		return startOrderTime;
+	}
 
-		public void setStartOrderTime(String startOrderTime) {
-			this.startOrderTime = startOrderTime;
-		}
+	public void setStartOrderTime(String startOrderTime) {
+		this.startOrderTime = startOrderTime;
+	}
 
-		public String getEndOrderTime() {
-			return endOrderTime;
-		}
+	public String getEndOrderTime() {
+		return endOrderTime;
+	}
 
-		public void setEndOrderTime(String endOrderTime) {
-			this.endOrderTime = endOrderTime;
-		}
+	public void setEndOrderTime(String endOrderTime) {
+		this.endOrderTime = endOrderTime;
+	}
 
-		public String getStartArrivTime() {
-			return startArrivTime;
-		}
+	public String getStartArrivTime() {
+		return startArrivTime;
+	}
 
-		public void setStartArrivTime(String startArrivTime) {
-			this.startArrivTime = startArrivTime;
-		}
+	public void setStartArrivTime(String startArrivTime) {
+		this.startArrivTime = startArrivTime;
+	}
 
-		public String getEndArrivTime() {
-			return endArrivTime;
-		}
+	public String getEndArrivTime() {
+		return endArrivTime;
+	}
 
-		public void setEndArrivTime(String endArrivTime) {
-			this.endArrivTime = endArrivTime;
-		}
-
+	public void setEndArrivTime(String endArrivTime) {
+		this.endArrivTime = endArrivTime;
+	}
 
 	public Integer getUpdater() {
 		return updater;
@@ -395,7 +422,7 @@ public class TdsMoneyApprovalDomain extends BasePageParam implements Serializabl
 	}
 
 	/**
-	 * 审核(0待审核  1已审核 2驳回  3到账 4线下开票  5 充账 )
+	 * 审核(0待审核 1已审核 2驳回 3到账 4线下开票 5 充账 )
 	 * 
 	 * @return
 	 */
@@ -404,7 +431,7 @@ public class TdsMoneyApprovalDomain extends BasePageParam implements Serializabl
 	}
 
 	/**
-	 *审核(0待审核  1已审核 2驳回  3到账 4线下开票  5 充账 )
+	 * 审核(0待审核 1已审核 2驳回 3到账 4线下开票 5 充账 )
 	 * 
 	 * @return
 	 */

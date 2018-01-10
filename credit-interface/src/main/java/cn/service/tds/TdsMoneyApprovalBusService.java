@@ -23,13 +23,6 @@ public interface TdsMoneyApprovalBusService {
 	
 	
 	/**
-	 * 退款
-	 */
-	BackResult<Integer> backOrder(TdsMoneyApprovalDomain domain);
-	
-	
-	
-	/**
 	 * 审核操作
 	 * @param id  列表id
 	 * @param orderNumber  订单号
@@ -64,5 +57,12 @@ public interface TdsMoneyApprovalBusService {
      * @return
      */
     BackResult<PageDomain<TdsCommissionDomain>> pageTdsCommission(TdsCommissionDomain domain);
+    
+    
+    /**
+     * 客户管理退款
+     * @return
+     */
+    BackResult<Integer>  backMoney();
 	
 }

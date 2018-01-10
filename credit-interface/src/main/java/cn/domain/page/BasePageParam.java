@@ -1,6 +1,5 @@
 package main.java.cn.domain.page;
 
-import java.util.Date;
 
 /**
  * 后台查询参数类
@@ -13,12 +12,12 @@ public class BasePageParam  {
 
 	private Integer numPerPage = 10; // 每页显示多行
 
-	private Date statTime; // 开始时间
+	private String statTime; // 开始时间
 	
-	private Date endTime; // 结束时间
+	private String endTime; // 结束时间
 	
 	
-	private Integer pageNumber=0; //sql页
+	private  Integer pageNumber=0; //sql页
 	
 	private  Integer selected=0; //选项查询
 	
@@ -55,28 +54,28 @@ public class BasePageParam  {
 	/**
 	 * @return the startTime
 	 */
-	public Date getStatTime() {
+	public String getStatTime() {
 		return statTime;
 	}
 
 	/**
 	 * @param startTime the startTime to set
 	 */
-	public void setStatTime(Date statTime) {
+	public void setStatTime(String statTime) {
 		this.statTime = statTime;
 	}
 
 	/**
 	 * @return the endTime
 	 */
-	public Date getEndTime() {
+	public String getEndTime() {
 		return endTime;
 	}
 
 	/**
 	 * @param endTime the endTime to set
 	 */
-	public void setEndTime(Date endTime) {
+	public void setEndTime(String endTime) {
 		this.endTime = endTime;
 	}
 

@@ -18,5 +18,12 @@ public interface TdsCompanyBusService {
 	
 	
 	BackResult<TdsCompanyDomain> loadComById(Integer id);
+	
+	/**
+	 * 根据userid查询公司id进表查询
+	 * @param userId
+	 * @return
+	 */
+	BackResult<TdsCompanyDomain> queryComByUserId(Integer userId);
 
 }
