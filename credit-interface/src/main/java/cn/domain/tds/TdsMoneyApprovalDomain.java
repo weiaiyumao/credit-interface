@@ -96,6 +96,7 @@ public class TdsMoneyApprovalDomain extends BasePageParam implements Serializabl
 	private String lessName;
 	
 	
+	
 	public String getLessName() {
 		return lessName;
 	}
