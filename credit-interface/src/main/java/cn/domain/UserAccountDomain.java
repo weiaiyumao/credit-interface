@@ -12,6 +12,8 @@ public class UserAccountDomain implements Serializable{
 	
 	private Integer apiAccount;
 
+	private Integer rqAccount;
+
 	public Integer getCreUserId() {
 		return creUserId;
 	}
@@ -35,6 +37,12 @@ public class UserAccountDomain implements Serializable{
 	public void setApiAccount(Integer apiAccount) {
 		this.apiAccount = apiAccount;
 	}
-	
-	
+
+	public Integer getRqAccount() {
+		return rqAccount;
+	}
+
+	public void setRqAccount(Integer rqAccount) {
+		this.rqAccount = rqAccount;
+	}
 }

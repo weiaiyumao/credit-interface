@@ -64,7 +64,13 @@ public interface UserAccountBusService {
 	 * @return
 	 */
 	BackResult<Boolean> consumeApiAccount(String creUserId,String count);
-	
-	
+
+	/**
+	 * 账户二次清洗api消费条数
+	 * @param creUserId
+	 * @param count
+	 * @return
+	 */
+	BackResult<Boolean> consumeRqApiAccount(String creUserId,String count);
 	
 }
