@@ -31,14 +31,14 @@ public interface TdsMoneyApprovalBusService {
 	 * @param appRemarks  原因
 	 * @return
 	 */
-	BackResult<Integer>  approvalByUpStatus(TdsMoneyApprovalDomain domain,String appRemarks);
+	BackResult<Integer>  approvalByUpStatusGo(TdsMoneyApprovalDomain domain,String appRemarks);
 	
 	
 	/**
-	 * 进账，出账，退款 分页查询
+	 * 进账列表
 	 * @return
 	 */
-    BackResult<PageDomain<TdsMoneyApprovalDomain>> pageMoneyApprovalAll(TdsMoneyApprovalDomain domain);
+    BackResult<PageDomain<TdsMoneyApprovalDomain>> pageMoneyApprovalGo(TdsMoneyApprovalDomain domain);
     
     
     
@@ -58,11 +58,5 @@ public interface TdsMoneyApprovalBusService {
      */
     BackResult<PageDomain<TdsCommissionDomain>> pageTdsCommission(TdsCommissionDomain domain);
     
-    
-    /**
-     * 客户管理退款
-     * @return
-     */
-    BackResult<Integer>  backMoney();
 	
 }

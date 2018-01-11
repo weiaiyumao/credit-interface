@@ -10,10 +10,13 @@ import java.io.Serializable;
  */
 public class TdsUserDomain implements Serializable {
 
+
+	
+	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -8616684772281242297L;
+	private static final long serialVersionUID = 4930352938233692478L;
 
 	// 用户id : id
 	private Integer id;
@@ -57,7 +60,7 @@ public class TdsUserDomain implements Serializable {
 	// 密码 : password
 	private String password;
 
-	// 父级用户id : parent_userId
+	// 父级用户id : parent_user_id
 	private Integer parentUserId;
 
 	// 头像图片地址 : hedehref
@@ -94,7 +97,7 @@ public class TdsUserDomain implements Serializable {
 	private String remarks;
 
 	private String token;
-
+	
 	public String getToken() {
 		return token;
 	}

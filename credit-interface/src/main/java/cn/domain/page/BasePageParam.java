@@ -16,7 +16,6 @@ public class BasePageParam  {
 	
 	private String endTime; // 结束时间
 	
-	
 	private  Integer pageNumber=0; //sql页
 	
 	private  Integer selected=0; //选项查询
@@ -24,8 +23,51 @@ public class BasePageParam  {
 	private  String likeName;  //模糊查询
 	
 	
+	// 订单开始时间
+	private String startOrderTime;
+	// 订单结束时间
+	private String endOrderTime;
+
+	// 到账开始时间
+	private String startArrivTime;
+
+	// 到账结束
+	private String endArrivTime;
 	
+
 	
+	public String getStartOrderTime() {
+		return startOrderTime;
+	}
+
+	public void setStartOrderTime(String startOrderTime) {
+		this.startOrderTime = startOrderTime;
+	}
+
+	public String getEndOrderTime() {
+		return endOrderTime;
+	}
+
+	public void setEndOrderTime(String endOrderTime) {
+		this.endOrderTime = endOrderTime;
+	}
+
+	public String getStartArrivTime() {
+		return startArrivTime;
+	}
+
+	public void setStartArrivTime(String startArrivTime) {
+		this.startArrivTime = startArrivTime;
+	}
+
+	public String getEndArrivTime() {
+		return endArrivTime;
+	}
+
+	public void setEndArrivTime(String endArrivTime) {
+		this.endArrivTime = endArrivTime;
+	}
+
 	public Integer getSelected() {
 		return selected;
 	}
