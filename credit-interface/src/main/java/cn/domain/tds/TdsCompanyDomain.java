@@ -50,7 +50,9 @@ public class TdsCompanyDomain implements Serializable{
 	//备注 : remarks 	
 	private String remarks; 
 	
-
+   
+	
+	
 	/**
 	 * 公司id : id
 	 * 

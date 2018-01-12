@@ -23,6 +23,9 @@ public class TdsMoneyApprovalBackDomain extends BasePageParam implements Seriali
 	// 关联用户id : user_id
 	private Integer userId;
 
+	// 剩余数量 : plus_number
+	private Integer plusNumber;
+
 	// 客户名称 : user_name
 	private String userName;
 
@@ -32,35 +35,26 @@ public class TdsMoneyApprovalBackDomain extends BasePageParam implements Seriali
 	// 订单号 : order_number
 	private String orderNumber;
 
-	// 退款审核(0待审核 1已审核 2驳回 3到账 4线下开票 ) : approval_status
+	// 剩余佣金 : serual_money
+	private String serualMoney;
+
+	// 退款数量 : back_number
+	private Integer backNumber;
+
+	// 退款金额 : back_money
+	private String backMoney;
+
+	// 退款数量涉及到总佣金 : back_number_commission
+	private String backNumberCommission;
+
+	// 退款审核(0待审核 1已审核 2驳回 ) : approval_status
 	private String approvalStatus;
-
-	// 关联下单订单号 : go_order_number
-	private String goOrderNumber;
-
-	// 下单金额,涉及金额 : go_sum_money
-	private String goSumMoney;
-
-	// 下单产品名称 : go_pname
-	private String goPname;
-
-	// 下单产品数量 : go_pname_number
-	private Integer goPnameNumber;
-
-	// 退款产品数量 : back_pname_number
-	private Integer backPnameNumber;
-
-	// 退款金额 : back_sum_money
-	private String backSumMoney;
-
-	// 退款原因描述 : back_remarks
-	private String backRemarks;
-
-	// 剩余数量 : plus_number
-	private Integer plusNumber;
 
 	// 删除状态：0正常，1已删除 : is_deleted
 	private String isDeleted;
+
+	// 退款原因描述 : back_remarks
+	private String backRemarks;
 
 	// 退单时间 : create_time
 	private java.util.Date createTime;
@@ -73,6 +67,26 @@ public class TdsMoneyApprovalBackDomain extends BasePageParam implements Seriali
 
 	// 操作更新人 : updater
 	private Integer updater;
+
+	// : remarks
+	private String backPname;
+
+	// : remarks1
+	private Integer remarks1;
+	
+	/**
+	 * : 退款产品
+	 * 
+	 * @return
+	 */
+	public String getBackPname() {
+		return backPname;
+	}
+	
+	
+	public void setBackPname(String backPname) {
+		this.backPname = backPname;
+	}
 
 	
 
@@ -110,6 +124,24 @@ public class TdsMoneyApprovalBackDomain extends BasePageParam implements Seriali
 	 */
 	public void setUserId(Integer userId) {
 		this.userId = userId;
+	}
+
+	/**
+	 * 剩余数量 : plus_number
+	 * 
+	 * @return
+	 */
+	public Integer getPlusNumber() {
+		return plusNumber;
+	}
+
+	/**
+	 * 剩余数量 : plus_number
+	 * 
+	 * @return
+	 */
+	public void setPlusNumber(Integer plusNumber) {
+		this.plusNumber = plusNumber;
 	}
 
 	/**
@@ -167,7 +199,79 @@ public class TdsMoneyApprovalBackDomain extends BasePageParam implements Seriali
 	}
 
 	/**
-	 * 退款审核(0待审核 1已审核 2驳回 3到账 4线下开票 ) : approval_status
+	 * 剩余佣金 : serual_money
+	 * 
+	 * @return
+	 */
+	public String getSerualMoney() {
+		return serualMoney;
+	}
+
+	/**
+	 * 剩余佣金 : serual_money
+	 * 
+	 * @return
+	 */
+	public void setSerualMoney(String serualMoney) {
+		this.serualMoney = serualMoney;
+	}
+
+	/**
+	 * 退款数量 : back_number
+	 * 
+	 * @return
+	 */
+	public Integer getBackNumber() {
+		return backNumber;
+	}
+
+	/**
+	 * 退款数量 : back_number
+	 * 
+	 * @return
+	 */
+	public void setBackNumber(Integer backNumber) {
+		this.backNumber = backNumber;
+	}
+
+	/**
+	 * 退款金额 : back_money
+	 * 
+	 * @return
+	 */
+	public String getBackMoney() {
+		return backMoney;
+	}
+
+	/**
+	 * 退款金额 : back_money
+	 * 
+	 * @return
+	 */
+	public void setBackMoney(String backMoney) {
+		this.backMoney = backMoney;
+	}
+
+	/**
+	 * 退款数量涉及到总佣金 : back_number_commission
+	 * 
+	 * @return
+	 */
+	public String getBackNumberCommission() {
+		return backNumberCommission;
+	}
+
+	/**
+	 * 退款数量涉及到总佣金 : back_number_commission
+	 * 
+	 * @return
+	 */
+	public void setBackNumberCommission(String backNumberCommission) {
+		this.backNumberCommission = backNumberCommission;
+	}
+
+	/**
+	 * 退款审核(0待审核 1已审核 2驳回 ) : approval_status
 	 * 
 	 * @return
 	 */
@@ -176,156 +280,12 @@ public class TdsMoneyApprovalBackDomain extends BasePageParam implements Seriali
 	}
 
 	/**
-	 * 退款审核(0待审核 1已审核 2驳回 3到账 4线下开票 ) : approval_status
+	 * 退款审核(0待审核 1已审核 2驳回 ) : approval_status
 	 * 
 	 * @return
 	 */
 	public void setApprovalStatus(String approvalStatus) {
 		this.approvalStatus = approvalStatus;
-	}
-
-	/**
-	 * 关联下单订单号 : go_order_number
-	 * 
-	 * @return
-	 */
-	public String getGoOrderNumber() {
-		return goOrderNumber;
-	}
-
-	/**
-	 * 关联下单订单号 : go_order_number
-	 * 
-	 * @return
-	 */
-	public void setGoOrderNumber(String goOrderNumber) {
-		this.goOrderNumber = goOrderNumber;
-	}
-
-	/**
-	 * 下单金额,涉及金额 : go_sum_money
-	 * 
-	 * @return
-	 */
-	public String getGoSumMoney() {
-		return goSumMoney;
-	}
-
-	/**
-	 * 下单金额,涉及金额 : go_sum_money
-	 * 
-	 * @return
-	 */
-	public void setGoSumMoney(String goSumMoney) {
-		this.goSumMoney = goSumMoney;
-	}
-
-	/**
-	 * 下单产品名称 : go_pname
-	 * 
-	 * @return
-	 */
-	public String getGoPname() {
-		return goPname;
-	}
-
-	/**
-	 * 下单产品名称 : go_pname
-	 * 
-	 * @return
-	 */
-	public void setGoPname(String goPname) {
-		this.goPname = goPname;
-	}
-
-	/**
-	 * 下单产品数量 : go_pname_number
-	 * 
-	 * @return
-	 */
-	public Integer getGoPnameNumber() {
-		return goPnameNumber;
-	}
-
-	/**
-	 * 下单产品数量 : go_pname_number
-	 * 
-	 * @return
-	 */
-	public void setGoPnameNumber(Integer goPnameNumber) {
-		this.goPnameNumber = goPnameNumber;
-	}
-
-	/**
-	 * 退款产品数量 : back_pname_number
-	 * 
-	 * @return
-	 */
-	public Integer getBackPnameNumber() {
-		return backPnameNumber;
-	}
-
-	/**
-	 * 退款产品数量 : back_pname_number
-	 * 
-	 * @return
-	 */
-	public void setBackPnameNumber(Integer backPnameNumber) {
-		this.backPnameNumber = backPnameNumber;
-	}
-
-	/**
-	 * 退款金额 : back_sum_money
-	 * 
-	 * @return
-	 */
-	public String getBackSumMoney() {
-		return backSumMoney;
-	}
-
-	/**
-	 * 退款金额 : back_sum_money
-	 * 
-	 * @return
-	 */
-	public void setBackSumMoney(String backSumMoney) {
-		this.backSumMoney = backSumMoney;
-	}
-
-	/**
-	 * 退款原因描述 : back_remarks
-	 * 
-	 * @return
-	 */
-	public String getBackRemarks() {
-		return backRemarks;
-	}
-
-	/**
-	 * 退款原因描述 : back_remarks
-	 * 
-	 * @return
-	 */
-	public void setBackRemarks(String backRemarks) {
-		this.backRemarks = backRemarks;
-	}
-
-	/**
-	 * 剩余数量 : plus_number
-	 * 
-	 * @return
-	 */
-	public Integer getPlusNumber() {
-		return plusNumber;
-	}
-
-	/**
-	 * 剩余数量 : plus_number
-	 * 
-	 * @return
-	 */
-	public void setPlusNumber(Integer plusNumber) {
-		this.plusNumber = plusNumber;
 	}
 
 	/**
@@ -344,6 +304,24 @@ public class TdsMoneyApprovalBackDomain extends BasePageParam implements Seriali
 	 */
 	public void setIsDeleted(String isDeleted) {
 		this.isDeleted = isDeleted;
+	}
+
+	/**
+	 * 退款原因描述 : back_remarks
+	 * 
+	 * @return
+	 */
+	public String getBackRemarks() {
+		return backRemarks;
+	}
+
+	/**
+	 * 退款原因描述 : back_remarks
+	 * 
+	 * @return
+	 */
+	public void setBackRemarks(String backRemarks) {
+		this.backRemarks = backRemarks;
 	}
 
 	/**
@@ -416,6 +394,25 @@ public class TdsMoneyApprovalBackDomain extends BasePageParam implements Seriali
 	 */
 	public void setUpdater(Integer updater) {
 		this.updater = updater;
+	}
+
+
+	/**
+	 * : remarks1
+	 * 
+	 * @return
+	 */
+	public Integer getRemarks1() {
+		return remarks1;
+	}
+
+	/**
+	 * : remarks1
+	 * 
+	 * @return
+	 */
+	public void setRemarks1(Integer remarks1) {
+		this.remarks1 = remarks1;
 	}
 
 }
