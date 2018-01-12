@@ -77,7 +77,7 @@ public class TdsMoneyApprovalDomain extends BasePageParam implements Serializabl
 	// 修改时间 : update_time
 	private java.util.Date updateTime;
 
-	
+	private String commissonMoney;
 	
 
 	//下单人，创建人
@@ -90,6 +90,14 @@ public class TdsMoneyApprovalDomain extends BasePageParam implements Serializabl
 	//关联产品id : pname_id 	
 	private Integer pnameId; 
 	
+	
+    public String getCommissonMoney() {
+		return commissonMoney;
+	}
+    
+    public void setCommissonMoney(String commissonMoney) {
+		this.commissonMoney = commissonMoney;
+	}
 	
 	/**
 	 * 关联产品id : pname_id
