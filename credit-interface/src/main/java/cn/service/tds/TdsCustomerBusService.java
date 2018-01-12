@@ -25,7 +25,7 @@ public interface TdsCustomerBusService {
 	 * @param comUrl
 	 * @return
 	 */
-	BackResult<Integer>  update(Integer loginUserId,PageAuto auto,Integer curUserId,Integer[] arrRoles);
+	BackResult<Integer>  updateCustomer(TdsCustomerViewDomain domain,Integer loginUserId,String passWord);
 	
 	
 	/**
@@ -49,7 +49,7 @@ public interface TdsCustomerBusService {
 	 * @param auto
 	 * @return
 	 */
-	BackResult<Integer> addTdsCustomer(PageAuto auto,Integer loginUserId,Integer[] arrRoles);
+	BackResult<Integer> addTdsCustomer(TdsCustomerViewDomain domain,Integer loginUserId,String passWord);
 	
 	
 	

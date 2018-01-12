@@ -43,34 +43,34 @@ public class StatusType {
 	
 	
 	/**
-	 * 审核(0待审核 1已审核 2驳回 3到账 4线下开票 5 充账 )
+	 * 0待审核 
 	 */
 	public static final String APPROVAL_STATUS_0="0";
 	
 	
 	/**
-	 * 审核(0待审核 1已审核 2驳回 3到账 4线下开票 5 充账 )
+	 *1已审核
 	 */
 	public static final String APPROVAL_STATUS_1="1";
 	
 	
 	
 	/**
-	 * 审核(0待审核 1已审核 2驳回 3到账 4线下开票 5 充账 )
+	 * 2驳回 
 	 */
 	public static final String APPROVAL_STATUS_2="2";
 	
 	
 	
 	/**
-	 * 审核(0待审核 1已审核 2驳回 3到账 4线下开票 5 充账 )
+	 * 3到账 
 	 */
 	public static final String APPROVAL_STATUS_3="3";
 	
 	
 	
 	/**
-	 * 审核(0待审核 1已审核 2驳回 3到账 4线下开票 5 充账 )
+	 *4线下开票 
 	 */
 	public static final String APPROVAL_STATUS_4="4";
     

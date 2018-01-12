@@ -30,6 +30,9 @@ public class TdsCustomerViewDomain implements Serializable {
 	private String com_url; // 公司网址
 
 	private String source; // 来源
+	
+	private String com_name;
+	
 
 	// 最近充值时间 : last_money_time
 	private java.util.Date lastMoneyTime;
@@ -39,6 +42,15 @@ public class TdsCustomerViewDomain implements Serializable {
 
 	// 累积返佣金 : sum_commission
 	private String sumCommission;
+	
+	
+	public String getCom_name() {
+		return com_name;
+	}
+	
+	public void setCom_name(String com_name) {
+		this.com_name = com_name;
+	}
 
 	public java.util.Date getLastMoneyTime() {
 		return lastMoneyTime;
