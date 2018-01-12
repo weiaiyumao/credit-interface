@@ -59,7 +59,7 @@ public interface TdsCustomerBusService {
       * @param id
       * @return
       */
-    BackResult<TdsCustomerViewDomain> loadById(Integer id);
+    BackResult<TdsCustomerViewDomain> loadByIdView(Integer userId);
 	
 	
 	
