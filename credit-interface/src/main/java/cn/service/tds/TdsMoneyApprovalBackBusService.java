@@ -25,4 +25,13 @@ public interface TdsMoneyApprovalBackBusService {
 	 */
 	BackResult<Integer> backApproval(TdsMoneyApprovalBackDomain domain);
 	
+	
+	/**
+	 * 退款状态操作
+	 * @param domain
+	 * @param appRemarks
+	 * @return
+	 */
+	BackResult<Integer> approvalByUpStatusBack(TdsMoneyApprovalBackDomain domain,String appRemarks);
+	
 }

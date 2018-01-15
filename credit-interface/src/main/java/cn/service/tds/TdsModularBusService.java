@@ -16,7 +16,7 @@ public interface TdsModularBusService{
 	
 	 BackResult<Integer> saveTdsModular(TdsModularDomain entity);
 	 
-     BackResult<TdsModularDomain> updateTdsModular(TdsModularDomain entity);
+     BackResult<Integer> updateTdsModular(String name,Integer selectedId,Integer newId);
      
      BackResult<List<TdsModularDomain>> selectAll(TdsModularDomain entity);
 }
