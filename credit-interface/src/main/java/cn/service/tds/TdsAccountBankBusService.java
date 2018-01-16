@@ -18,7 +18,7 @@ public interface TdsAccountBankBusService {
 	 * 入账银行管理列表<分页>
 	 * @return
 	 */
-	BackResult<PageDomain<TdsAccountBankDomain>> pageTdsAccountBank(String likeName,Integer currentPage,Integer numPerPage,Integer selected);
+	BackResult<PageDomain<TdsAccountBankDomain>> pageTdsAccountBank(TdsAccountBankDomain domain);
 
 	
 	/**
@@ -26,13 +26,13 @@ public interface TdsAccountBankBusService {
 	 * @param domain
 	 * @return
 	 */
-	BackResult<Integer> update(TdsAccountBankDomain domain,Integer loginUserId);
+	BackResult<Integer> update(TdsAccountBankDomain domain);
 	
 	
 	/**
 	 * 新增保存
 	 */
-	BackResult<Integer> save(TdsAccountBankDomain domain,Integer loginUserId);
+	BackResult<Integer> save(TdsAccountBankDomain domain);
 	
 	
 	/**

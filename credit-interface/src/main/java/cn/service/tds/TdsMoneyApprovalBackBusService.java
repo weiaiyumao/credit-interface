@@ -23,7 +23,7 @@ public interface TdsMoneyApprovalBackBusService {
 	 * @param domain
 	 * @return
 	 */
-	BackResult<Integer> backApproval(TdsMoneyApprovalBackDomain domain);
+	BackResult<Integer> backOrderMoney(TdsMoneyApprovalBackDomain domain);
 	
 	
 	/**
