@@ -2,13 +2,15 @@ package main.java.cn.domain.tds;
 
 import java.io.Serializable;
 
+import main.java.cn.domain.page.BasePageParam;
+
 /**
  * 功能对象
  * 
  * @author ChuangLan
  *
  */
-public class TdsFunctionDomain implements Serializable {
+public class TdsFunctionDomain extends BasePageParam implements Serializable {
 
 	/**
 	 * 

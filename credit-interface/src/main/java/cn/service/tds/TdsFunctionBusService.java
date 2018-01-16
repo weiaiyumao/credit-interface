@@ -3,6 +3,7 @@ package main.java.cn.service.tds;
 import java.util.List;
 
 import main.java.cn.common.BackResult;
+import main.java.cn.domain.page.PageDomain;
 import main.java.cn.domain.tds.TdsFunctionDomain;
 import main.java.cn.domain.tds.TdsModularDomain;
 
@@ -28,6 +29,6 @@ public interface TdsFunctionBusService {
 
 	BackResult<TdsFunctionDomain> updateTdsFunction(TdsFunctionDomain entity);
 
-	BackResult<List<TdsFunctionDomain>> selectAll(TdsFunctionDomain entity);
+	BackResult<PageDomain<TdsFunctionDomain>> pageTdsFunction(TdsFunctionDomain entity);
 
 }
