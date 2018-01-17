@@ -7,6 +7,8 @@ import main.java.cn.domain.ErpTradeDomain;
 import main.java.cn.domain.TrdOrderDomain;
 import main.java.cn.domain.UserAccountDomain;
 import main.java.cn.domain.page.PageDomain;
+import main.java.cn.domain.tds.TdsCreUserAccountLogDomain;
+import main.java.cn.domain.tds.TdsUserAccountInfoDomain;
 
 public interface UserAccountBusService {
 
@@ -73,4 +75,17 @@ public interface UserAccountBusService {
 	 */
 	BackResult<Boolean> consumeRqApiAccount(String creUserId,String count);
 	
+	/**
+	 * 根据手机号码查询用户的账户信息详情
+	 * @param mobile
+	 * @return
+	 */
+	BackResult<TdsUserAccountInfoDomain> findTdsUserAccountInfoDomainByMobile(String mobile);
+	
+	/**
+	 * 根据手机号码查询用户的账户信息详情
+	 * @param mobile
+	 * @return
+	 */
+	BackResult<Boolean> updateUserAccountByTds(TdsCreUserAccountLogDomain domain);
 }
