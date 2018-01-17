@@ -22,6 +22,17 @@ public class BasePageParam  {
 	
 	private  String likeName;  //模糊查询
 	
+	private String parentUserId;  //父级用户
+	
+	
+	public String getParentUserId() {
+		return parentUserId;
+	}
+	
+	public void setParentUserId(String parentUserId) {
+		this.parentUserId = parentUserId;
+	}
+	
 	
 	// 订单开始时间
 	private String startOrderTime;

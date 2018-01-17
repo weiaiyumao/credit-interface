@@ -4,6 +4,7 @@ import java.util.List;
 
 import main.java.cn.common.BackResult;
 import main.java.cn.domain.page.PageDomain;
+import main.java.cn.domain.tds.TdsFunMoViewDomain;
 import main.java.cn.domain.tds.TdsFunctionDomain;
 import main.java.cn.domain.tds.TdsModularDomain;
 
@@ -25,10 +26,10 @@ public interface TdsFunctionBusService {
 
 	BackResult<TdsFunctionDomain> saveTdsFunction(TdsFunctionDomain entity);
 
-	BackResult<TdsFunctionDomain> loadById(Integer id);
+	BackResult<TdsFunMoViewDomain> loadByIdView(Integer id);
 
 	BackResult<TdsFunctionDomain> updateTdsFunction(TdsFunctionDomain entity);
 
-	BackResult<PageDomain<TdsFunctionDomain>> pageTdsFunction(TdsFunctionDomain entity);
+	BackResult<PageDomain<TdsFunMoViewDomain>> pageTdsFunction(TdsFunMoViewDomain domain);
 
 }

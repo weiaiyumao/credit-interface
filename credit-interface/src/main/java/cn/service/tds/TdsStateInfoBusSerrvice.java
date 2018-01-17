@@ -68,6 +68,11 @@ public interface TdsStateInfoBusSerrvice {
 	BackResult<List<TdsEnumDomain>> queryByTypeCode(String codeName);
 	
 	
-	
+	/**
+	 * 根据产品id获取价格集合
+	 * @param id
+	 * @return
+	 */
+	BackResult<List<TdsProductMoneyDomain>> queryPnameByPro(Integer pnameId);
 	
 }
