@@ -5,7 +5,6 @@ package main.java.cn.service.tds;
 import java.util.List;
 
 import main.java.cn.common.BackResult;
-import main.java.cn.domain.page.PageAuto;
 import main.java.cn.domain.page.PageDomain;
 import main.java.cn.domain.tds.TdsAttornLogDomain;
 import main.java.cn.domain.tds.TdsCustomerViewDomain;
@@ -33,7 +32,7 @@ public interface TdsCustomerBusService {
 	 * @param auto
 	 * @return
 	 */
-	BackResult<PageDomain<TdsCustomerViewDomain>> pageTdsCustomer(PageAuto auto);
+	BackResult<PageDomain<TdsCustomerViewDomain>> pageTdsCustomer(TdsCustomerViewDomain domain);
 	
 	
 	/**

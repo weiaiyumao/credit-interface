@@ -2,7 +2,6 @@ package main.java.cn.service.tds;
 
 
 import main.java.cn.common.BackResult;
-import main.java.cn.domain.page.PageAuto;
 import main.java.cn.domain.page.PageDomain;
 import main.java.cn.domain.tds.TdsCustomerViewDomain;
 
@@ -18,6 +17,6 @@ public interface TdsApprovalBusService {
 	 * @param auto
 	 * @return
 	 */
-	 BackResult<PageDomain<TdsCustomerViewDomain>> pageTdsApproval(PageAuto auto);
+	 BackResult<PageDomain<TdsCustomerViewDomain>> pageTdsApproval(TdsCustomerViewDomain domain);
 
 }

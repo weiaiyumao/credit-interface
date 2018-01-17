@@ -3,13 +3,15 @@ package main.java.cn.domain.tds;
 import java.io.Serializable;
 import java.util.Date;
 
+import main.java.cn.domain.page.BasePageParam;
+
 /**
  * 客户列表视图
  * 
  * @author ChuangLan
  *
  */
-public class TdsCustomerViewDomain implements Serializable {
+public class TdsCustomerViewDomain extends BasePageParam implements Serializable {
 
 	private static final long serialVersionUID = 7107661821531785244L;
 
@@ -21,18 +23,17 @@ public class TdsCustomerViewDomain implements Serializable {
 
 	private String departName; // 部门名称
 
-	private String contact; // 联系人
+	private String contact;
 
-	private String phone; // 手机号码
+	private String phone;
 
-	private Date create_time; // 创建时间
+	private Date create_time;
 
-	private String com_url; // 公司网址
+	private String com_url;
 
 	private String source; // 来源
 	
-	private String com_name;
-	
+	private String comName;
 
 	// 最近充值时间 : last_money_time
 	private java.util.Date lastMoneyTime;
@@ -44,12 +45,12 @@ public class TdsCustomerViewDomain implements Serializable {
 	private String sumCommission;
 	
 	
-	public String getCom_name() {
-		return com_name;
+	public String getComName() {
+		return comName;
 	}
 	
-	public void setCom_name(String com_name) {
-		this.com_name = com_name;
+	public void setComName(String comName) {
+		this.comName = comName;
 	}
 
 	public java.util.Date getLastMoneyTime() {

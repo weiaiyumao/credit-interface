@@ -15,12 +15,12 @@ public class StatusType {
 	/**
 	 * 0:用户注册添加
 	 */
-	public static final String ADD_REGISTER = "注册";
+	public static final String ADD_REGISTER = "系统注册";
 
 	/**
 	 * 1：管理员后台添加
 	 */
-	public static final String ADD_ADMIN = "系统添加";
+	public static final String ADD_ADMIN = "自定义注册添加";
 
 
 	//=============审核状态=================
@@ -85,5 +85,24 @@ public class StatusType {
 	 */
 	public static final String APPROVAL_BILLING_ON="已开票";
     
+	
+	
+	
+	
+	
+	
+	//====角色分配==  系统默认角色
+	
+	
+	/**
+	 * 业务员
+	 */
+	public static final Integer ROLE_YWY=3;
+	
+	
+	
+	
+	
+	
 	
 }
