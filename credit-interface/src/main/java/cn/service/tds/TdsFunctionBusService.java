@@ -24,11 +24,11 @@ public interface TdsFunctionBusService {
 	 */
 	BackResult<List<TdsModularDomain>> moduleLoadingByUsreId(Integer userId);
 
-	BackResult<TdsFunctionDomain> saveTdsFunction(TdsFunctionDomain entity);
+	BackResult<Integer> saveTdsFunction(TdsFunctionDomain entity);
 
 	BackResult<TdsFunMoViewDomain> loadByIdView(Integer id);
 
-	BackResult<TdsFunctionDomain> updateTdsFunction(TdsFunctionDomain entity);
+	BackResult<Integer> updateTdsFunction(TdsFunctionDomain entity);
 
 	BackResult<PageDomain<TdsFunMoViewDomain>> pageTdsFunction(TdsFunMoViewDomain domain);
 
