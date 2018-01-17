@@ -68,12 +68,20 @@ public class TdsMoneyApprovalBackDomain extends BasePageParam implements Seriali
 	// 操作更新人 : updater
 	private Integer updater;
 
-	// : remarks
+	// : backPname
 	private String backPname;
 
-	// : remarks1
-	private Integer remarks1;
-	
+	// : pnameId
+	private Integer pnameId;
+
+	public Integer getPnameId() {
+		return pnameId;
+	}
+
+	public void setPnameId(Integer pnameId) {
+		this.pnameId = pnameId;
+	}
+
 	/**
 	 * : 退款产品
 	 * 
@@ -82,13 +90,10 @@ public class TdsMoneyApprovalBackDomain extends BasePageParam implements Seriali
 	public String getBackPname() {
 		return backPname;
 	}
-	
-	
+
 	public void setBackPname(String backPname) {
 		this.backPname = backPname;
 	}
-
-	
 
 	/**
 	 * 退款审核id : id
@@ -396,23 +401,5 @@ public class TdsMoneyApprovalBackDomain extends BasePageParam implements Seriali
 		this.updater = updater;
 	}
 
-
-	/**
-	 * : remarks1
-	 * 
-	 * @return
-	 */
-	public Integer getRemarks1() {
-		return remarks1;
-	}
-
-	/**
-	 * : remarks1
-	 * 
-	 * @return
-	 */
-	public void setRemarks1(Integer remarks1) {
-		this.remarks1 = remarks1;
-	}
 
 }
