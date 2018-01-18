@@ -327,7 +327,7 @@ public class ChuangLanSmsUtil {
 	
 	
 	public static void main(String[] args) {
-		ChuangLanSmsUtil.getInstance().sendYxByMobile("13817367247");
+		ChuangLanSmsUtil.getInstance().sendYxByMobile("15821368395");
 	}
 
 }

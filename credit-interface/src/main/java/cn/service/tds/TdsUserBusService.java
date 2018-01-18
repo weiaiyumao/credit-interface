@@ -97,5 +97,13 @@ public interface TdsUserBusService{
 	 * @return
 	 */
     BackResult<Integer> updateHeadImg(Integer id,String hedehref);
+    
+    
+    /**
+     * 用户数据同步 creUser表
+     * @param domain
+     * @return
+     */
+    BackResult<Integer> addCreUser(TdsUserDomain domain);
 	
 }
