@@ -19,4 +19,15 @@ public interface TdsModularBusService{
      BackResult<Integer> updateTdsModular(String name,Integer selectedId,Integer newId,String arrModulars);
      
      BackResult<List<TdsModularDomain>> selectAll(TdsModularDomain entity);
+     
+     
+     
+     
+     
+     
+     /**
+      * 模块从渲染
+      * @return
+      */
+     BackResult<List<TdsModularDomain>> queryModular();
 }

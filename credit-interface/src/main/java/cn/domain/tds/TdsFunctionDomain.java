@@ -1,6 +1,7 @@
 package main.java.cn.domain.tds;
 
 import java.io.Serializable;
+import java.util.List;
 
 import main.java.cn.domain.page.BasePageParam;
 
@@ -10,7 +11,7 @@ import main.java.cn.domain.page.BasePageParam;
  * @author ChuangLan
  *
  */
-public class TdsFunctionDomain extends BasePageParam implements Serializable {
+public class TdsFunctionDomain  implements Serializable {
 
 	/**
 	 * 
@@ -46,6 +47,19 @@ public class TdsFunctionDomain extends BasePageParam implements Serializable {
 
 	// 删除状态：0正常，1已删除 : is_deleted
 	private String isDeleted;
+	
+	
+	
+	private List<TdsFunctionDomain>  tdsFunctions;
+	
+	
+	public List<TdsFunctionDomain> getTdsFunctions() {
+		return tdsFunctions;
+	}
+	
+	public void setTdsFunctions(List<TdsFunctionDomain> tdsFunctions) {
+		this.tdsFunctions = tdsFunctions;
+	}
 
 	/**
 	 * 功能id : id

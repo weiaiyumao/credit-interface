@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 
+
 /**
  * : 模块
  * 
@@ -46,6 +47,18 @@ public class TdsModularDomain implements Serializable {
 
 	// 排序 : sort
 	private Integer sort;
+	
+	
+   private List<TdsModularDomain>  tdsModular;
+	
+	
+	public void setTdsModular(List<TdsModularDomain> tdsModular) {
+		this.tdsModular = tdsModular;
+	}
+	
+	public List<TdsModularDomain> getTdsModular() {
+		return tdsModular;
+	}
 	
 	
 	
