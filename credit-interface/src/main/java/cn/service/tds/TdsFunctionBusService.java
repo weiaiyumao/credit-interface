@@ -45,5 +45,8 @@ public interface TdsFunctionBusService {
 	
 	
 	BackResult<List<TdsFunctionDomain>> queryFunction();
+	
+	
+	BackResult<List<TdsFunctionDomain>> selectAll(Integer parentId);
 
 }
