@@ -51,12 +51,6 @@ public class TdsUserDomain implements Serializable {
 	// 数量 : user_number
 	private String userNumber;
 
-	// 绑定银行卡id : bank
-	private Integer bank;
-
-	// 支付宝id : alipay
-	private Integer alipay;
-
 	// 密码 : password
 	private String password;
 
@@ -316,41 +310,6 @@ public class TdsUserDomain implements Serializable {
 		this.userNumber = userNumber;
 	}
 
-	/**
-	 * 绑定银行卡id : bank
-	 * 
-	 * @return
-	 */
-	public Integer getBank() {
-		return bank;
-	}
-
-	/**
-	 * 绑定银行卡id : bank
-	 * 
-	 * @return
-	 */
-	public void setBank(Integer bank) {
-		this.bank = bank;
-	}
-
-	/**
-	 * 支付宝id : alipay
-	 * 
-	 * @return
-	 */
-	public Integer getAlipay() {
-		return alipay;
-	}
-
-	/**
-	 * 支付宝id : alipay
-	 * 
-	 * @return
-	 */
-	public void setAlipay(Integer alipay) {
-		this.alipay = alipay;
-	}
 
 	/**
 	 * 密码 : password

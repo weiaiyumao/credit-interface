@@ -3,7 +3,6 @@ package main.java.cn.domain.tds;
 import java.io.Serializable;
 import java.util.List;
 
-import main.java.cn.domain.page.BasePageParam;
 
 /**
  * 功能对象

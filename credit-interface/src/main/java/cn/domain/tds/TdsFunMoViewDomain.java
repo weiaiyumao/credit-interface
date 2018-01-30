@@ -2,7 +2,6 @@ package main.java.cn.domain.tds;
 
 import java.io.Serializable;
 
-import main.java.cn.domain.page.BasePageParam;
 
 /**
  * 功能列表展示视图
@@ -10,33 +9,42 @@ import main.java.cn.domain.page.BasePageParam;
  * @author ChuangLan
  *
  */
-public class TdsFunMoViewDomain  extends BasePageParam implements Serializable {
-
-	
-
+public class TdsFunMoViewDomain  implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 5715942498596338905L;
 
-	private Integer id;
-	
+	private Integer funId;
+
 	private String funName;
-	
+
 	private String url;
-	
+
 	private String moName;
-	
+
 	private String remarks;
 
-	public Integer getId() {
-		return id;
+	private Integer moId;
+	
+	
+	public Integer getFunId() {
+		return funId;
+	}
+	
+	public void setFunId(Integer funId) {
+		this.funId = funId;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public Integer getMoId() {
+		return moId;
 	}
+
+	public void setMoId(Integer moId) {
+		this.moId = moId;
+	}
+
 
 	public String getFunName() {
 		return funName;
@@ -69,9 +77,5 @@ public class TdsFunMoViewDomain  extends BasePageParam implements Serializable {
 	public void setRemarks(String remarks) {
 		this.remarks = remarks;
 	}
-	
-	
-	
-	
 
 }
