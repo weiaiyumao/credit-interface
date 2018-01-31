@@ -30,4 +30,11 @@ public interface TdsMoneyApprovalCarryBusService {
 	 */
 	BackResult<Map<String,Object>> getCarryByUserId(Integer userId);
 	
+	
+	/**
+	 * 提现佣金
+	 * @return
+	 */
+	BackResult<Integer> getSubCarry(Integer userId,String carrMoney,String type);
+	
 }

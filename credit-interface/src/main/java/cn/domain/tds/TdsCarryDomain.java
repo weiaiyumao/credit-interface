@@ -10,13 +10,13 @@ import main.java.cn.domain.page.BasePageParam;
  * 
  * @author Gen
  */
-public class TdsCarryDomain extends BasePageParam implements Serializable{
-	
-	
+public class TdsCarryDomain extends BasePageParam implements Serializable {
+
+
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 8206625024185957963L;
+	private static final long serialVersionUID = 3955987148813982374L;
 
 	//提现id : id 	
 	private Integer id; 
@@ -30,8 +30,11 @@ public class TdsCarryDomain extends BasePageParam implements Serializable{
 	//提现订单 : carry_order 	
 	private String carryOrder; 
 	
-	//所涉及银行id : bank_name 	
-	private String bankName; 
+	//提现方式  1对公转账银行卡 2支付宝 : carry_type 	
+	private String carryType; 
+	
+	//提现方式账号 : carry_type_name 	
+	private String carryTypeName; 
 	
 	//删除状态：0正常，1已删除 : is_deleted 	
 	private String isDeleted; 
@@ -127,21 +130,38 @@ public class TdsCarryDomain extends BasePageParam implements Serializable{
 		this.carryOrder = carryOrder;
 	}
 	/**
-	 * 所涉及银行id : bank_name
+	 * 提现方式  1对公转账银行卡 2支付宝 : carry_type
 	 * 
 	 * @return 
 	 */
-	public String getBankName () {
-		return bankName;
+	public String getCarryType () {
+		return carryType;
 	}
 	
 	/**
-	 * 所涉及银行id : bank_name
+	 * 提现方式  1对公转账银行卡 2支付宝 : carry_type
 	 * 
 	 * @return 
 	 */
-	public void setBankName (String bankName) {
-		this.bankName = bankName;
+	public void setCarryType (String carryType) {
+		this.carryType = carryType;
+	}
+	/**
+	 * 提现方式账号 : carry_type_name
+	 * 
+	 * @return 
+	 */
+	public String getCarryTypeName () {
+		return carryTypeName;
+	}
+	
+	/**
+	 * 提现方式账号 : carry_type_name
+	 * 
+	 * @return 
+	 */
+	public void setCarryTypeName (String carryTypeName) {
+		this.carryTypeName = carryTypeName;
 	}
 	/**
 	 * 删除状态：0正常，1已删除 : is_deleted
@@ -280,6 +300,4 @@ public class TdsCarryDomain extends BasePageParam implements Serializable{
 		this.remarks = remarks;
 	}
 
-
-  
 }
