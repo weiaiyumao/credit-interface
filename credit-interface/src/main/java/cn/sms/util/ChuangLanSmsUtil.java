@@ -103,7 +103,7 @@ public class ChuangLanSmsUtil {
 		String report = "true";
 
 		SmsSendRequest smsSingleRequest = new SmsSendRequest(ACCOUNT, PSWD, msg, phone, report);
-		smsSingleRequest.setExtend("DL");
+//		smsSingleRequest.setExtend("DL");
 
 		String requestJson = JSON.toJSONString(smsSingleRequest);
 
@@ -132,7 +132,7 @@ public class ChuangLanSmsUtil {
 		String report = "true";
 
 		SmsSendRequest smsSingleRequest = new SmsSendRequest(ACCOUNT, PSWD, msg, phone, report);
-		smsSingleRequest.setExtend("CZ");
+//		smsSingleRequest.setExtend("CZ");
 
 		String requestJson = JSON.toJSONString(smsSingleRequest);
 
@@ -158,7 +158,7 @@ public class ChuangLanSmsUtil {
 		String report = "true";
 
 		SmsSendRequest smsSingleRequest = new SmsSendRequest(ACCOUNT, PSWD, msg, phone, report);
-		smsSingleRequest.setExtend("JPC");
+//		smsSingleRequest.setExtend("JPC");
 
 		String requestJson = JSON.toJSONString(smsSingleRequest);
 
@@ -184,7 +184,7 @@ public class ChuangLanSmsUtil {
 		String report = "true";
 
 		SmsSendRequest smsSingleRequest = new SmsSendRequest(ACCOUNT, PSWD, msg, phone, report);
-		smsSingleRequest.setExtend("JZT");
+//		smsSingleRequest.setExtend("JZT");
 
 		String requestJson = JSON.toJSONString(smsSingleRequest);
 
@@ -236,7 +236,7 @@ public class ChuangLanSmsUtil {
 		String report = "true";
 
 		SmsSendRequest smsSingleRequest = new SmsSendRequest(ACCOUNT, PSWD, msg, phone, report);
-		smsSingleRequest.setExtend("JYC");
+//		smsSingleRequest.setExtend("JYC");
 
 		String requestJson = JSON.toJSONString(smsSingleRequest);
 
@@ -262,7 +262,7 @@ public class ChuangLanSmsUtil {
 		String report = "true";
 
 		SmsSendRequest smsSingleRequest = new SmsSendRequest(ACCOUNT, PSWD, msg, phone, report);
-		smsSingleRequest.setExtend("JYC");
+//		smsSingleRequest.setExtend("JYC");
 
 		String requestJson = JSON.toJSONString(smsSingleRequest);
 
