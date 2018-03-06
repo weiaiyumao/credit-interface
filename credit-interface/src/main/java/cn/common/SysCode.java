@@ -1,4 +1,4 @@
-package cn.common;
+package main.java.cn.common;
 
 /**
  * 系统业务配置参数
