@@ -4,6 +4,7 @@ import java.util.List;
 
 
 import main.java.cn.common.BackResult;
+import main.java.cn.domain.ApiLogPageDomain;
 import main.java.cn.domain.MobileInfoDomain;
 import main.java.cn.domain.MobileTestLogDomain;
 import main.java.cn.domain.page.PageDomain;
@@ -38,5 +39,13 @@ public interface ApiMobileTestBusService {
 	 */
 	BackResult<PageDomain<MobileTestLogDomain>> getPageByUserId(int pageNo,int pageSize,String userId,String type);
 	
+	/**
+	 * 分页获取飓金荣通接口检测结果列表
+	 * @return
+	 */
+	BackResult<PageDomain<ApiLogPageDomain>> getPageByCustomerId(int pageNo, int pageSize, String customerId, String method);
+	
 	BackResult<MobileInfoDomain> findByMobile(String mobile,String userId);
+	
+	BackResult<MobileInfoDomain> findByMobileToAmi(String mobile,String userId,String method);
 }
