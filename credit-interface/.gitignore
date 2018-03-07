@@ -1,2 +1,7 @@
 /bin/
 /target/
+/.gitignore
+/_code.patch
+/credit-interface.iml
+/.idea/
+/.settings/

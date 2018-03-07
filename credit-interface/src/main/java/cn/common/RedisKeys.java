@@ -139,4 +139,22 @@ public class RedisKeys {
 	public String getRQAPIcountKeys() {
 		return "rq:account:keys";
 	}
+	
+	/**
+	 * 号码状态实时查询API账户条数
+	 * @param userId
+	 * @return
+	 */
+	public String getMsAPIcountKey(String userId) {
+		return "ms:account:" + userId;
+	}
+	
+	/**
+	 * 号码状态实时查询API账户keys
+	 * @param userId
+	 * @return
+	 */
+	public String getMsAPIcountKeys() {
+		return "ms:account:keys";
+	}
 }

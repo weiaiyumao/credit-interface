@@ -1,6 +1,9 @@
 package main.java.cn.service;
 
+import java.util.Map;
+
 import main.java.cn.common.BackResult;
+import main.java.cn.domain.AccountInfoDomain;
 import main.java.cn.domain.ApiAccountInfoDomain;
 
 public interface ApiAccountInfoBusService {
@@ -46,4 +49,34 @@ public interface ApiAccountInfoBusService {
 	 * @return
 	 */
 	BackResult<Integer> checkRqApiAccount(String apiName,String password,String ip,int checkCount);
+	
+	/**
+	 * 飓金荣通接口调用
+	 * @param apiName
+	 * @param password
+	 * @param ip
+	 * @param checkCount
+	 * @return
+	 */
+	BackResult<AccountInfoDomain> checkTcAccount(String apiName, String password, String method,String ip);
+	
+	/**
+	 * 飓金荣通接口调用
+	 * @param apiName
+	 * @param password
+	 * @param ip
+	 * @param checkCount
+	 * @return
+	 */
+	BackResult<Integer> updateTcAccount(Map<String,Object> params);
+	
+	/**
+	 * 号码状态实时检测
+	 * @param apiName
+	 * @param password
+	 * @param ip
+	 * @param checkCount
+	 * @return
+	 */
+	BackResult<Integer> checkMsAccount(String apiName,String password,String ip,int checkCount);
 }
