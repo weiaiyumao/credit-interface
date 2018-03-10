@@ -42,6 +42,51 @@ public class RedisKeys {
 	}
 	
 	/**
+	 * 实号包列表key
+	 * @param userId
+	 * @return
+	 */
+	public String getkhRealListtkey(String userId){
+		return "kh:sl:sr" + userId;
+	}
+	
+	/**
+	 * 空号包列表key
+	 * @param userId
+	 * @return
+	 */
+	public String getkhKongListtkey(String userId){
+		return "kh:sl:sk:" + userId;
+	}
+	
+	/**
+	 * 沉默包列表key
+	 * @param userId
+	 * @return
+	 */
+	public String getkhSilenceListtkey(String userId){
+		return "kh:sl:sm:" + userId;
+	}
+	
+	/**
+	 * 空号检测线程key （多线程执行是 全部执行完毕生成文件使用）
+	 * @param userId
+	 * @return
+	 */
+	public String getkhGenerateResultskey(String userId){
+		return "kh:gs:ts:" + userId;
+	}
+	
+	/**
+	 * 空号检测线程key （多线程执行是 全部执行完毕生成文件使用）
+	 * @param userId
+	 * @return
+	 */
+	public String getkhExceptionkey(String userId){
+		return "kh:gs:ex:" + userId;
+	}
+	
+	/**
 	 * 获取空号检测 检测方法加锁名称
 	 * @param userId
 	 * @return
