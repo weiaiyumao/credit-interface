@@ -2,13 +2,15 @@ package main.java.cn.domain.tds;
 
 import java.io.Serializable;
 
+import main.java.cn.domain.page.BasePageParam;
+
 /**
  * : 用户与角色
  * 
  * 
  * @author Gen
  */
-public class TdsUserRoleDomain implements Serializable {
+public class TdsUserRoleDomain extends BasePageParam implements Serializable {
 
 	/**
 	 * 
@@ -39,18 +41,47 @@ public class TdsUserRoleDomain implements Serializable {
 	// 删除状态：0正常，1已删除 : is_deleted
 	private String isDeleted;
 
-	//账号状态： 0：正常  1;禁用
-    private String status;
-    
-    
-    public String getStatus() {
+	// 账号状态： 0：正常 1;禁用
+	private String status;
+
+	private String name;
+
+	private String roleName;
+
+	private String departName;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getRoleName() {
+		return roleName;
+	}
+
+	public void setRoleName(String roleName) {
+		this.roleName = roleName;
+	}
+
+	public String getDepartName() {
+		return departName;
+	}
+
+	public void setDepartName(String departName) {
+		this.departName = departName;
+	}
+
+	public String getStatus() {
 		return status;
 	}
-    
-    public void setStatus(String status) {
+
+	public void setStatus(String status) {
 		this.status = status;
 	}
-	
+
 	/**
 	 * : id
 	 * 
@@ -194,7 +225,5 @@ public class TdsUserRoleDomain implements Serializable {
 	public void setIsDeleted(String isDeleted) {
 		this.isDeleted = isDeleted;
 	}
-	
-	
 
 }

@@ -3,7 +3,6 @@ package main.java.cn.service.tds;
 import java.util.List;
 
 import main.java.cn.common.BackResult;
-import main.java.cn.domain.page.PageAuto;
 import main.java.cn.domain.page.PageDomain;
 import main.java.cn.domain.tds.TdsDepartmentDomain;
 import main.java.cn.domain.tds.TdsFunctionDomain;
@@ -33,7 +32,7 @@ public interface TdsDepartmentBusService {
 	 * @param entity
 	 * @return
 	 */
-	BackResult<PageDomain<UserRoleDepartmentViewDomain>> pageUserRoleDepartmentView(PageAuto auto);
+	BackResult<PageDomain<UserRoleDepartmentViewDomain>> pageUserRoleDepartmentView(UserRoleDepartmentViewDomain auto);
 
 	/**
 	 * 根据usreId查询角色权限

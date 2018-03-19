@@ -4,7 +4,6 @@ import java.util.List;
 
 
 import main.java.cn.common.BackResult;
-import main.java.cn.domain.page.PageDomain;
 import main.java.cn.domain.tds.TdsCompanyDomain;
 import main.java.cn.domain.tds.TdsUserDomain;
 
@@ -55,16 +54,16 @@ public interface TdsUserBusService{
 	BackResult<List<TdsUserDomain>> selectAll(TdsUserDomain entity);
 	
 	
-	
-	/**
-	 * 用户查询<分页>
-	 * @param entity
-	 * @param pageSize   每页显示行数
-	 * @param curPage    当前页码
-	 * @return
-	 */
-    BackResult<PageDomain<TdsUserDomain>> pageSelectAll(TdsUserDomain entity,Integer pageSize,Integer curPage);
-    
+//	
+//	/**
+//	 * 用户查询<分页>
+//	 * @param entity
+//	 * @param pageSize   每页显示行数
+//	 * @param curPage    当前页码
+//	 * @return
+//	 */
+//    BackResult<PageDomain<TdsUserDomain>> pageSelectAll(TdsUserDomain entity,Integer pageSize,Integer curPage);
+//    
     
     /**
      * 根据用户电话获取对象信息
