@@ -4,7 +4,6 @@ import java.util.List;
 
 
 import main.java.cn.common.BackResult;
-import main.java.cn.domain.page.PageAuto;
 import main.java.cn.domain.page.PageDomain;
 import main.java.cn.domain.tds.TdsEnumDomain;
 import main.java.cn.domain.tds.TdsProductMoneyDomain;
@@ -23,7 +22,7 @@ public interface TdsStateInfoBusSerrvice {
 	 * @param domain
 	 * @return
 	 */
-	BackResult<PageDomain<TdsStateInfoDomain>> pageTdsStateInfo(PageAuto auto);
+	BackResult<PageDomain<TdsStateInfoDomain>> pageTdsStateInfo(TdsStateInfoDomain domain);
 	
 	
 	/**
