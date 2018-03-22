@@ -65,7 +65,7 @@ public interface TdsDepartmentBusService {
 	 * 自定义角色权限
 	 * @return
 	 */
-	BackResult<Integer> addCustomPermissions(String soleName,Integer loginUserId,Integer[] arrfun);
+	BackResult<Integer> addCustomPermissions(String soleName,Integer loginUserId,Integer[] arrfuns);
 	
 	
 	/**

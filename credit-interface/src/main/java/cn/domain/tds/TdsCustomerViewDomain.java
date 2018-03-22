@@ -44,6 +44,16 @@ public class TdsCustomerViewDomain extends BasePageParam implements Serializable
 	// 累积返佣金 : sum_commission
 	private String sumCommission;
 	
+	//删除状态：0正常，1已删除  2客服列表注册 3 客户审核驳回
+	private String isDeleted;
+	
+	public String getIsDeleted() {
+		return isDeleted;
+	}
+	
+	public void setIsDeleted(String isDeleted) {
+		this.isDeleted = isDeleted;
+	}
 	
 	public String getComName() {
 		return comName;

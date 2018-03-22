@@ -11,16 +11,19 @@ public class StatusType {
 	 * 1：自定义角色
 	 */
 	public static final String CUSTOM_ROLES = "1";
+	
 
 	/**
 	 * 0:用户注册添加
 	 */
-	public static final String ADD_REGISTER = "系统注册";
+	public static final String ADD_REGISTER = "SYS";
+	
 
 	/**
 	 * 1：管理员后台添加
 	 */
-	public static final String ADD_ADMIN = "自定义注册添加";
+	public static final String ADD_ADMIN = "Admin";
+	
 
 
 	//=============审核状态=================

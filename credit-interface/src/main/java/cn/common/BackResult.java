@@ -33,4 +33,27 @@ public class BackResult<T> {
 		this.resultMsg = resultMsg;
 		this.setResultObj(null);
 	}
+	
+	
+	
+	@SuppressWarnings("rawtypes")
+	public static BackResult error(String msg) {
+		return error(ResultCode.RESULT_FAILED, msg);
+	}
+	
+	
+	@SuppressWarnings("rawtypes")
+	public static BackResult error(){
+		return error(ResultCode.RESULT_FAILED,"失败");
+	}
+	
+	
+	
+	@SuppressWarnings("rawtypes")
+	public static BackResult error(String code, String msg) {
+		BackResult b = new BackResult();
+		b.setResultCode(code);
+		b.setResultMsg(msg);
+		return b;
+	}
 }
