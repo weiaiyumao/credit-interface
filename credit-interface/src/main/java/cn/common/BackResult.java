@@ -1,5 +1,7 @@
 package main.java.cn.common;
 
+
+@SuppressWarnings("all")
 public class BackResult<T> {
 	
 	private String resultMsg;
@@ -28,6 +30,8 @@ public class BackResult<T> {
 		this.resultCode = ResultCode.RESULT_SUCCEED;
 		this.resultMsg = "成功";
 	}
+	
+	
 	public BackResult(String resultCode,String resultMsg){
 		this.resultCode = resultCode;
 		this.resultMsg = resultMsg;
@@ -36,24 +40,21 @@ public class BackResult<T> {
 	
 	
 	
-	@SuppressWarnings("rawtypes")
+	public static BackResult ok(){
+		return new BackResult(ResultCode.RESULT_SUCCEED, "成功");
+	}
+	
 	public static BackResult error(String msg) {
 		return error(ResultCode.RESULT_FAILED, msg);
 	}
 	
 	
-	@SuppressWarnings("rawtypes")
 	public static BackResult error(){
 		return error(ResultCode.RESULT_FAILED,"失败");
 	}
 	
 	
-	
-	@SuppressWarnings("rawtypes")
 	public static BackResult error(String code, String msg) {
-		BackResult b = new BackResult();
-		b.setResultCode(code);
-		b.setResultMsg(msg);
-		return b;
+		return new BackResult(code,msg);
 	}
 }

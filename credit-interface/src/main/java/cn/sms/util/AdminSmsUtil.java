@@ -97,6 +97,44 @@ public class AdminSmsUtil {
     }
     
     
+    
+    
+    
+    
+    /**
+     *发送短信
+     */
+    public Boolean sendAdminSmsByCustomer(String mobile,boolean fag) {
+
+        String smsSingleRequestServerUrl = "http://smssh1.253.com/msg/send/json";
+        // 短信内容
+        String msg ="";
+        
+        if(fag){
+        	msg="审核通过，账号为手机号码，初始密码:a123456";
+        }else{
+        	msg="审核被驳回，请重新申请";
+        }
+        
+        // 手机号码
+        String phone = mobile;
+        
+        // 状态报告
+        String report = "true";
+
+        SmsSendRequest smsSingleRequest = new SmsSendRequest(ACCOUNT, PSWD, msg, phone, report);
+
+        String requestJson = JSON.toJSONString(smsSingleRequest);
+
+        String response = sendSmsByPost(smsSingleRequestServerUrl, requestJson);
+
+        SmsSendResponse smsSingleResponse = JSON.parseObject(response, SmsSendResponse.class);
+        
+        return smsSingleResponse.getCode().equals("0") ? true : false;
+    }
+    
+    
+    
 	/**
 	 * 5位数简单验证码生成
 	 * @return

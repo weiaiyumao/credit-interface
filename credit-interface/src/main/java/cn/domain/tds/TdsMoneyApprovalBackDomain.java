@@ -73,6 +73,18 @@ public class TdsMoneyApprovalBackDomain extends BasePageParam implements Seriali
 
 	// : pnameId
 	private Integer pnameId;
+	
+	
+	private Integer creUserId;
+	
+	
+	public Integer getCreUserId() {
+		return creUserId;
+	}
+	
+	public void setCreUserId(Integer creUserId) {
+		this.creUserId = creUserId;
+	}
 
 	public Integer getPnameId() {
 		return pnameId;

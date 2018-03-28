@@ -38,7 +38,7 @@ public interface TdsMoneyApprovalBusService {
 	 * 进账列表
 	 * @return
 	 */
-    BackResult<PageDomain<TdsMoneyApprovalDomain>> pageMoneyApprovalGo(TdsMoneyApprovalDomain domain);
+    BackResult<PageDomain<TdsMoneyApprovalDomain>> pageApprovalByUpStatusGo(TdsMoneyApprovalDomain domain);
     
     
     

@@ -2,7 +2,6 @@ package main.java.cn.domain.tds;
 
 import java.io.Serializable;
 
-import main.java.cn.domain.page.BasePageParam;
 
 /**
  * : 出账审核
@@ -55,6 +54,16 @@ public class TdsApprovalOutDomain implements Serializable {
 	
 	//备注 : remarks 	
 	private String remarks;
+	
+	private String overCommisson;
+	
+	public String getOverCommisson() {
+		return overCommisson;
+	}
+	
+	public void setOverCommisson(String overCommisson) {
+		this.overCommisson = overCommisson;
+	}
 
 	public Integer getId() {
 		return id;

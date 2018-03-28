@@ -37,6 +37,7 @@ public class TdsApprovalOutQueryDomain implements Serializable {
 	private  String likeName;  //模糊查询
 	
 	private String parentUserId;  //父级用户
+	
 
 	public String getCarrStatus() {
 		return carrStatus;
