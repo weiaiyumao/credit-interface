@@ -206,5 +206,32 @@ public abstract class TdsEnum {
 			this.type = type;
 		}
 	}
+	
+	
+	/**
+	 * 0：正常  1：申请中  2：驳回
+	 * @author ChuangLan
+	 *
+	 */
+	public enum USERSTATUS{
+
+		PASST("0"),  
+ 
+		PLEASE("1"),  
+		
+		REJ("2");  
+
+		private String code;
+          
+		public String getCode() {
+			return code;
+		}
+
+		USERSTATUS(String code) {
+			this.code = code;
+		}
+	}
+	
+	
 
 }

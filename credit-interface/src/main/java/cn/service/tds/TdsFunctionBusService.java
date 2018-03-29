@@ -30,9 +30,6 @@ public interface TdsFunctionBusService {
 	 */
 	BackResult<List<TdsFunctionDomain>>  loadingByUsreIdRole(Integer userId);
 	
-	
-	
-	
 
 	BackResult<Integer> saveTdsFunction(TdsFunctionDomain entity);
 
@@ -40,12 +37,19 @@ public interface TdsFunctionBusService {
 
 	BackResult<Integer> updateTdsFunction(TdsFunctionDomain entity);
 
-	/*BackResult<PageDomain<TdsFunMoViewDomain>> pageTdsFunction(TdsFunMoViewDomain domain);*/
-	
-	
+
 	BackResult<List<TdsFunctionDomain>> queryFunction();
 	
 	
-	BackResult<List<TdsFunctionDomain>> selectAll(Integer parentId);
+	BackResult<List<TdsFunctionDomain>> selectAll(TdsFunctionDomain entity);
+	
+	/**
+	 * 保存模块
+	 * @param entity
+	 * @return
+	 */
+	BackResult<Integer> saveModular(TdsFunctionDomain entity);
+	
+	
 
 }
