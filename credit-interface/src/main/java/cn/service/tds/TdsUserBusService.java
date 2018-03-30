@@ -1,6 +1,5 @@
 package main.java.cn.service.tds;
 
-import java.util.List;
 
 
 import main.java.cn.common.BackResult;
@@ -46,13 +45,13 @@ public interface TdsUserBusService{
 	BackResult<Integer> deleteById(Integer id);
   
     
-	/**
-	 * 查询用户
-	 * @param entity
-	 * @return
-	 */
-	BackResult<List<TdsUserDomain>> selectAll(TdsUserDomain entity);
-	
+//	/**
+//	 * 查询用户
+//	 * @param entity
+//	 * @return
+//	 */
+//	BackResult<List<TdsUserDomain>> selectAll(TdsUserDomain entity);
+//	
 	
 //	
 //	/**

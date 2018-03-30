@@ -2,6 +2,36 @@ package main.java.cn.enums;
 
 //admin 枚举
 public abstract class TdsEnum {
+	
+	
+	public enum ROLETYPE{
+		
+		ADMIN(1,"超级管理员"),
+		DIRECTOR(2,"部门主管"),
+		SALESMAN(3,"业务员"),
+		FINANCE(4,"财务");
+		
+		private Integer code;
+
+		private String name;
+
+		public Integer getCode() {
+			return code;
+		}
+
+		public String getName() {
+			return name;
+		}
+
+		ROLETYPE(Integer code, String value) {
+			this.code = code;
+			this.name = value;
+		}
+		
+	}
+	
+	
+	
 
 	/**
 	 * 手机解绑绑定枚举

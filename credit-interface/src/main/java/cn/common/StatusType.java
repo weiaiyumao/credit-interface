@@ -6,29 +6,20 @@ public class StatusType {
 	 * 角色状态 0:默认角色
 	 */
 	public static final String DEFAULT_ROLE = "0";
-
+	
 	/**
 	 * 1：自定义角色
 	 */
 	public static final String CUSTOM_ROLES = "1";
 	
-
-	/**
-	 * 0:用户注册添加
-	 */
-	public static final String ADD_REGISTER = "SYS";
 	
-
-	/**
-	 * 1：管理员后台添加
-	 */
+    //注册来源
+	public static final String ADD_REGISTER = "SYS";
 	public static final String ADD_ADMIN = "Admin";
 	
 
 
 	//=============审核状态=================
-	
-	
 	/**
 	 * 审核类型 1进账审核 2出账审核 3退款审核 : approval_type
 	 */
@@ -43,7 +34,6 @@ public class StatusType {
 	 * 审核类型 1进账审核 2出账审核 3退款审核 : approval_type
 	 */
 	public static final String APPROVAL_TYPE_BACK="3";
-	
 	
 	/**
 	 * 0待审核 
@@ -71,7 +61,6 @@ public class StatusType {
 	public static final String APPROVAL_STATUS_3="3";
 	
 	
-	
 	/**
 	 *4线下开票 
 	 */
@@ -91,21 +80,7 @@ public class StatusType {
 	
 	
 	
-	
-	
-	
-	//====角色分配==  系统默认角色
-	
-	
-	/**
-	 * 业务员
-	 */
-	public static final Integer ROLE_YWY=3;
-	
-	
-	
-	
-	
+
 	
 	
 }

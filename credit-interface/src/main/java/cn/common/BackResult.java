@@ -39,9 +39,20 @@ public class BackResult<T> {
 	}
 	
 	
+	public BackResult(String resultCode,String resultMsg,T t){
+		this.resultCode = resultCode;
+		this.resultMsg = resultMsg;
+		this.setResultObj(t);
+	}
+	
+	
 	
 	public static BackResult ok(){
 		return new BackResult(ResultCode.RESULT_SUCCEED, "成功");
+	}
+	
+	public static BackResult ok(Object obj){
+		return new BackResult(ResultCode.RESULT_SUCCEED, "成功",obj);
 	}
 	
 	public static BackResult error(String msg) {

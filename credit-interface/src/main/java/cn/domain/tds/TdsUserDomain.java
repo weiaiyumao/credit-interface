@@ -96,6 +96,18 @@ public class TdsUserDomain implements Serializable {
 	private Integer creUserId;
 	
 	
+	private String roleName;
+	
+	
+	public String getRoleName() {
+		return roleName;
+	}
+	
+	public void setRoleName(String roleName) {
+		this.roleName = roleName;
+	}
+	
+	
 	public Integer getCreUserId() {
 		return creUserId;
 	}
