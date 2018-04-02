@@ -1,6 +1,7 @@
 package main.java.cn.domain.tds;
 
 import java.io.Serializable;
+import java.util.Map;
 
 /**
  * : 用户
@@ -10,8 +11,6 @@ import java.io.Serializable;
  */
 public class TdsUserDomain implements Serializable {
 
-
-	
 	
 	/**
 	 * 
@@ -92,21 +91,18 @@ public class TdsUserDomain implements Serializable {
 
 	private String token;
 	
-	
 	private Integer creUserId;
 	
 	
-	private String roleName;
+	private Map<String,Object> roleMap;
 	
-	
-	public String getRoleName() {
-		return roleName;
+	public Map<String, Object> getRoleMap() {
+		return roleMap;
 	}
 	
-	public void setRoleName(String roleName) {
-		this.roleName = roleName;
+	public void setRoleMap(Map<String, Object> roleMap) {
+		this.roleMap = roleMap;
 	}
-	
 	
 	public Integer getCreUserId() {
 		return creUserId;

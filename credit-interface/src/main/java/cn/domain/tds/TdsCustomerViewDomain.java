@@ -48,6 +48,17 @@ public class TdsCustomerViewDomain extends BasePageParam implements Serializable
 	private String isDeleted;
 	
 	
+	private Integer roleId;
+	
+	
+	public Integer getRoleId() {
+		return roleId;
+	}
+	
+	public void setRoleId(Integer roleId) {
+		this.roleId = roleId;
+	}
+	
 	private String status;
 	
 	public String getStatus() {
