@@ -40,9 +40,9 @@ public interface TdsDepartmentBusService {
 	 * 
 	 * @param usreId
 	 * @return
-	 */
+	 *//*
 	BackResult<List<TdsFunctionDomain>> funByuserId(Integer usreId);
-
+*/
 	/**
 	 * 后台添加角色
 	 * 
