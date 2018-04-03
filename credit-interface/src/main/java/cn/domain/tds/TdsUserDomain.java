@@ -74,7 +74,7 @@ public class TdsUserDomain implements Serializable {
 	// 账号状态 0：正常 1：禁用 : status
 	private String status;
 
-	// 来源 0:注册 1:系统添加 2:商务 3:分销商4:代理商 : source
+	// 来源 0:注册 1:系统添加
 	private String source;
 
 	// 创建者 : creater

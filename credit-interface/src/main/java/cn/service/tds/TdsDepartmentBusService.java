@@ -2,6 +2,7 @@ package main.java.cn.service.tds;
 
 import java.util.List;
 
+
 import main.java.cn.common.BackResult;
 import main.java.cn.domain.page.PageDomain;
 import main.java.cn.domain.tds.TdsDepartmentDomain;
@@ -62,11 +63,19 @@ public interface TdsDepartmentBusService {
 	
 	
 	/**
-	 * 自定义角色权限
+	 * 新增自定义角色权限
 	 * @return
 	 */
 	BackResult<Integer> addCustomPermissions(String soleName,Integer loginUserId,Integer[] arrfuns);
 	
+	/**
+	 * 编辑角色权限
+	 * @param roleId
+	 * @param soleName
+	 * @param arrfuns
+	 * @return
+	 */
+	BackResult<Integer> upArrByRoleId(Integer roleId,String soleName,Integer[] arrfuns);
 	
 	/**
 	 * 功能管理add
